@@ -1,18 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace Wcf_Projet_Cinema.Model
 {
+    [DataContract]
     public class Inventory
     {
-        public int Inventory_Id { get; set; }
-        public int Inventory_FilmId { get; set; }
-        public int Inventory_StoreId { get; set; }
-        public int Inventory_LastUpdate { get; set; }
+        [DataMember]
+        public int InventoryId { get; set; }
 
-        public virtual ICollection<Rental> Inventory_Rentals { get; set; }
+        [DataMember]
+        public int InventoryFilmId { get; set; }
+
+        [DataMember]
+        public int InventoryStoreId { get; set; }
+
+        [DataMember]
+        public int InventoryLastUpdate { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Rental> InventoryRentals { get; set; }
 
     }
 }

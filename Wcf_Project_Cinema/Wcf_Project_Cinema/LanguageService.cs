@@ -8,15 +8,16 @@ using Wcf_Projet_Cinema.Model;
 
 namespace Wcf_Project_Cinema
 {
-    // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "ActorService" à la fois dans le code et le fichier de configuration.
-    public class ActorService : IActorService
+    // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "LanguageService" à la fois dans le code et le fichier de configuration.
+    public class LanguageService : ILanguageService
     {
-        public Actor Add()
+        public Language Add()
         {
             throw new NotImplementedException();
         }
 
-        public Actor Modify()
+
+        public Language Modify()
         {
             throw new NotImplementedException();
         }

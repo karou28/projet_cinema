@@ -1,28 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace Wcf_Projet_Cinema.Model
 {
+    [DataContract]
     public class Film
     {
-        public int Film_Id { get; set; }
-        public string Film_Title { get; set; }
-        public string Film_Description { get; set; }
-        public string Film_ReleaseYear { get; set; }
-        public int Film_LanguageId { get; set; }
-        public int Film_OriginalLanguageId { get; set; }
-        public int Film_RentalDuration { get; set; }
-        public int Film_RentalRate { get; set; }
-        public int Film_Length { get; set; }
-        public int Film_ReplacementCost { get; set; }
-        public string Film_Rate { get; set; }
-        public string Film_SpecialFeatures { get; set; }
-        public DateTime Film_LastUpdate { get; set; }
+        [DataMember]
+        public int FilmId { get; set; }
 
-        public virtual ICollection<Store>Film_Stores { get; set; }
-        public virtual ICollection<Category> Film_Categories { get; set; }
+        [DataMember]
+        public string FilmTitle { get; set; }
+
+        [DataMember]
+        public string FilmDescription { get; set; }
+
+        [DataMember]
+        public string FilmReleaseYear { get; set; }
+
+        [DataMember]
+        public int FilmLanguageId { get; set; }
+
+        [DataMember]
+        public int FilmOriginalLanguageId { get; set; }
+
+        [DataMember]
+        public int FilmRentalDuration { get; set; }
+
+        [DataMember]
+        public int FilmRentalRate { get; set; }
+
+        [DataMember]
+        public int FilmLength { get; set; }
+
+        [DataMember]
+        public int FilmReplacementCost { get; set; }
+
+        [DataMember]
+        public string FilmRate { get; set; }
+
+        [DataMember]
+        public string FilmSpecialFeatures { get; set; }
+
+        [DataMember]
+        public DateTime FilmLastUpdate { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Store>FilmStores { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Category> FilmCategories { get; set; }
 
 
     }
