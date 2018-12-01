@@ -41,6 +41,8 @@
                         <MenuItem x:Name="Store" Height="18" Background="blue" Width="150" Foreground="white"  Header="Store" />
                         <MenuItem x:Name="Actor" Height="18" Background="blue" Width="150" Foreground="white"  Header="Actor" />
                         <MenuItem x:Name="Film" Height="18" Background="blue" Width="150" Foreground="white"  Header="Film" HorizontalAlignment="Left" />
+                        <MenuItem x:Name="Country" Height="18" Background="blue" Width="150" Foreground="white"  Header="Country" HorizontalAlignment="Left" />
+                        <MenuItem x:Name="language" Height="18" Background="blue" Width="150" Foreground="white"  Header="language" HorizontalAlignment="Left" />
 
 
                     </MenuItem>
