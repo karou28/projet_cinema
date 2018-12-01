@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de 
 // l'ensemble d'attributs suivant. Pour modifier les informations
 // associées à un assembly, changez les valeurs de ces attributs.
-[assembly: AssemblyTitle("Wcf_Projet_Cinema")]
+[assembly: AssemblyTitle("Wcf_Project_Cinema")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hewlett-Packard")]
-[assembly: AssemblyProduct("Wcf_Projet_Cinema")]
+[assembly: AssemblyProduct("Wcf_Project_Cinema")]
 [assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Le GUID suivant est pour l'ID de la typelib si ce projet est exposé à COM
-[assembly: Guid("af4a1f99-485e-45dc-9a8f-db608a22398b")]
+[assembly: Guid("80194ebd-ed3f-47ee-92fb-7a996271353e")]
 
 // Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 //
@@ -29,7 +29,7 @@ using System.Runtime.InteropServices;
 //      Numéro de build
 //      Révision
 //
-// Vous pouvez spécifier toutes les valeurs ou indiquer des numéros de révision et de build par défaut 
+// Vous pouvez spécifier toutes les valeurs ou indiquer les numéros de build et de révision par défaut 
 // en utilisant '*', comme ci-dessous :
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
