@@ -44,7 +44,9 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActorService.cs" />
     <Compile Include="AddressService.cs" />
+    <Compile Include="IActorService.cs" />
     <Compile Include="IAddressService.cs" />
     <Compile Include="Model\Actor.cs" />
     <Compile Include="Model\Address.cs" />
