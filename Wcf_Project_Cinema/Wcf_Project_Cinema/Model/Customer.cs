@@ -28,7 +28,7 @@ namespace Wcf_Projet_Cinema.Model
         public int CustomerAddressId { get; set; }
 
         [DataMember]
-        public string CustomerActive { get; set; }
+        public Boolean CustomerActive { get; set; }
 
         [DataMember]
         public DateTime CustomerCreateDate { get; set; }

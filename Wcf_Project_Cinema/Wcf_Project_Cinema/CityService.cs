@@ -11,12 +11,17 @@ namespace Wcf_Project_Cinema
     // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "CityService" à la fois dans le code et le fichier de configuration.
     public class CityService : ICityService
     {
-        public City Add()
+        BDContext bdc = new BDContext();
+  
+
+        public City Add(City c)
         {
-            throw new NotImplementedException();
+            bdc.Cyties.Add(c);
+            bdc.SaveChanges();
+            return c;
         }
 
-        public City Modify()
+        public City Modify(City c)
         {
             throw new NotImplementedException();
         }

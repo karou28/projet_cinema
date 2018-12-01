@@ -13,9 +13,9 @@ namespace Wcf_Project_Cinema
     public interface ICityService
     {
         [OperationContract]
-        City Add();
+        City Add(City c);
 
         [OperationContract]
-        City Modify();
+        City Modify(City c);
     }
 }
