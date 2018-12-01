@@ -1,19 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace Wcf_Projet_Cinema.Model
 {
+    [DataContract]
     public class Payment
     {
-        public int Payment_Id { get; set; }
-        public int Payment_CustomerId { get; set; }
-        public int Payment_StaffId { get; set; }
-        public int Payment_RentalId { get; set; }
-        public int Payment_Amount { get; set; }
-        public DateTime Payment_Date { get; set; }
-        public DateTime Payment_LastUpdate { get; set; }
+        [DataMember]
+        public int PaymentId { get; set; }
+
+        [DataMember]
+        public int PaymentCustomerId { get; set; }
+
+        [DataMember]
+        public int PaymentStaffId { get; set; }
+
+        [DataMember]
+        public int PaymentRentalId { get; set; }
+
+        [DataMember]
+        public int PaymentAmount { get; set; }
+
+        [DataMember]
+        public DateTime PaymentDate { get; set; }
+
+        [DataMember]
+        public DateTime PaymentLastUpdate { get; set; }
 
 
     }

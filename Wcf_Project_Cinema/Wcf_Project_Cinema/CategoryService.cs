@@ -4,14 +4,14 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
-using Wcf_Project_Cinema.Model;
+using Wcf_Projet_Cinema.Model;
 
 namespace Wcf_Project_Cinema
 {
-    // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "AddressService" à la fois dans le code et le fichier de configuration.
-    public class AddressService : IAddressService
+    // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "CategoryService" à la fois dans le code et le fichier de configuration.
+    public class CategoryService : ICategoryService
     {
-        public Address Add()
+        public Category Add()
         {
             throw new NotImplementedException();
         }
@@ -20,7 +20,7 @@ namespace Wcf_Project_Cinema
         {
         }
 
-        public Address Modify()
+        public Category Modify()
         {
             throw new NotImplementedException();
         }

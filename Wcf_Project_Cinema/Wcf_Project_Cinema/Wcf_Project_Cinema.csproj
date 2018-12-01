@@ -34,8 +34,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
@@ -46,8 +53,27 @@
   <ItemGroup>
     <Compile Include="ActorService.cs" />
     <Compile Include="AddressService.cs" />
+    <Compile Include="BDContext.cs" />
+    <Compile Include="CategoryService.cs" />
+    <Compile Include="CityService.cs" />
+    <Compile Include="CountryService.cs" />
+    <Compile Include="CustomerService.cs" />
+    <Compile Include="FilmService.cs" />
     <Compile Include="IActorService.cs" />
     <Compile Include="IAddressService.cs" />
+    <Compile Include="ICategoryService.cs" />
+    <Compile Include="ICityService.cs" />
+    <Compile Include="ICountryService.cs" />
+    <Compile Include="ICustomerService.cs" />
+    <Compile Include="IFilmService.cs" />
+    <Compile Include="IInventoryService.cs" />
+    <Compile Include="ILanguageService.cs" />
+    <Compile Include="InventoryService.cs" />
+    <Compile Include="IPaymentService.cs" />
+    <Compile Include="IRentalService.cs" />
+    <Compile Include="IStaffService.cs" />
+    <Compile Include="IStoreService.cs" />
+    <Compile Include="LanguageService.cs" />
     <Compile Include="Model\Actor.cs" />
     <Compile Include="Model\Address.cs" />
     <Compile Include="Model\Category.cs" />
@@ -61,12 +87,19 @@
     <Compile Include="Model\Rental.cs" />
     <Compile Include="Model\Staff.cs" />
     <Compile Include="Model\Store.cs" />
+    <Compile Include="PaymentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RentalService.cs" />
+    <Compile Include="StaffService.cs" />
+    <Compile Include="StoreService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Model\sakila.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VSToolsPath Condition="'$(VSToolsPath)' == '' and '$(VisualStudioVersion)' != '' and '$(VisualStudioVersion)' != '11.0'">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

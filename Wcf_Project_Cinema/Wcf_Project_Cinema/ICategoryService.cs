@@ -8,15 +8,14 @@ using Wcf_Projet_Cinema.Model;
 
 namespace Wcf_Project_Cinema
 {
-    // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom d'interface "IActorService" à la fois dans le code et le fichier de configuration.
+    // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom d'interface "ICategoryService" à la fois dans le code et le fichier de configuration.
     [ServiceContract]
-    public interface IActorService
+    public interface ICategoryService
     {
         [OperationContract]
-        Actor Add();
+        Category Add();
 
         [OperationContract]
-        Actor Modify();
-
+        Category Modify();
     }
 }

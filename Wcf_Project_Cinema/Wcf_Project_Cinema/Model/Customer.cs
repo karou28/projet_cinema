@@ -1,22 +1,42 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace Wcf_Projet_Cinema.Model
 {
+    [DataContract]
     public class Customer
     {
-        public int Customer_Id { get; set; }
-        public int Customer_StoreId { get; set; }
-        public string Customer_FirstName { get; set; }
-        public string Customer_LastName { get; set; }
-        public string Customer_Email { get; set; }
-        public int Customer_AddressId { get; set; }
-        public string Customer_Active { get; set; }
-        public DateTime Customer_CreateDate { get; set; }
-        public DateTime Customer_LastUpdate { get; set; }
+        [DataMember]
+        public int CustomerId { get; set; }
 
-        public virtual ICollection<Payment> Customer_Payments { get; set; }
+        [DataMember]
+        public int CustomerStoreId { get; set; }
+
+        [DataMember]
+        public string CustomerFirstName { get; set; }
+
+        [DataMember]
+        public string CustomerLastName { get; set; }
+
+        [DataMember]
+        public string CustomerEmail { get; set; }
+
+        [DataMember]
+        public int CustomerAddressId { get; set; }
+
+        [DataMember]
+        public string CustomerActive { get; set; }
+
+        [DataMember]
+        public DateTime CustomerCreateDate { get; set; }
+
+        [DataMember]
+        public DateTime CustomerLastUpdate { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Payment> CustomerPayments { get; set; }
     }
 }

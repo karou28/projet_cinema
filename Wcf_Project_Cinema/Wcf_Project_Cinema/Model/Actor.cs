@@ -1,17 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace Wcf_Projet_Cinema.Model
 {
+    [DataContract]
     public class Actor
     {
-        public int Actor_Id { get; set; }
-        public string Actor_FirstName { get; set; }
-        public string Actor_LastName { get; set; }
-        public DateTime Actor_LastUpdate { get; set; }
+        [DataMember]
+        public int ActorId { get; set; }
 
-        public virtual ICollection<Film> Actor_Films { get; set; }
+        [DataMember]
+        public string ActorFirstName { get; set; }
+
+        [DataMember]
+        public string ActorLastName { get; set; }
+
+        [DataMember]
+        public DateTime ActorLastUpdate { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Film> ActorFilms { get; set; }
     }
 }

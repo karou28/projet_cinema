@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using Wcf_Project_Cinema.Model;
 
 namespace Wcf_Project_Cinema
 {
@@ -12,6 +13,9 @@ namespace Wcf_Project_Cinema
     public interface IAddressService
     {
         [OperationContract]
-        void DoWork();
+        Address Add();
+
+        [OperationContract]
+        Address Modify();
     }
 }

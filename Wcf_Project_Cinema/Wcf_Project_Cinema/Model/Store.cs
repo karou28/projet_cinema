@@ -1,19 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace Wcf_Projet_Cinema.Model
 {
+    [DataContract]
     public class Store
     {
-        public int Store_Id { get; set; }
-        public int Store_ManagerStaffId { get; set; }
-        public int Store_AdresseId { get; set; }
-        public DateTime Store_LastUpdate { get; set; }
+        [DataMember]
+        public int StoreId { get; set; }
 
-        public virtual ICollection<Film> Store_Films { get; set; }
-        public virtual ICollection<Customer> Store_Customers { get; set; }
-        public virtual ICollection<Staff> Store_Staffs { get; set; }
+        [DataMember]
+        public int StoreManagerStaffId { get; set; }
+
+        [DataMember]
+        public int StoreAdresseId { get; set; }
+
+        [DataMember]
+        public DateTime StoreLastUpdate { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Film> StoreFilms { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Customer> StoreCustomers { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Staff> StoreStaffs { get; set; }
     }
 }

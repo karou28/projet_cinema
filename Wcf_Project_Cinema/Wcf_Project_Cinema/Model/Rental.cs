@@ -1,20 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace Wcf_Projet_Cinema.Model
 {
+    [DataContract]
     public class Rental
     {
-        public int Rental_Id { get; set; }
-        public DateTime Rental_Date { get; set; }
-        public int Rental_InventoryId { get; set; }
-        public int Rental_CustomerId { get; set; }
-        public DateTime Rental_ReturnDate { get; set; }
-        public int Rental_StaffId { get; set; }
-        public int Rental_LastUpdate { get; set; }
+        [DataMember]
+        public int RentalId { get; set; }
 
-        public virtual ICollection<Payment> Rental_Payments { get; set; }
+        [DataMember]
+        public DateTime RentalDate { get; set; }
+
+        [DataMember]
+        public int RentalInventoryId { get; set; }
+
+        [DataMember]
+        public int RentalCustomerId { get; set; }
+
+        [DataMember]
+        public DateTime RentalReturnDate { get; set; }
+
+        [DataMember]
+        public int RentalStaffId { get; set; }
+
+        [DataMember]
+        public int RentalLastUpdate { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Payment> RentalPayments { get; set; }
     }
 }

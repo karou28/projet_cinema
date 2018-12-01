@@ -1,16 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace Wcf_Projet_Cinema.Model
 {
+    [DataContract]
     public class Language
     {
-        public int Language_Id { get; set; }
-        public string Language_Name { get; set; }
-        public DateTime Language_LastUpdate { get; set; }
+        [DataMember]
+        public int LanguageId { get; set; }
 
-        public virtual ICollection<Film> Language_Films { get; set; }
+        [DataMember]
+        public string LanguageName { get; set; }
+
+        [DataMember]
+        public DateTime LanguageLastUpdate { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Film> LanguageFilms { get; set; }
     }
 }
