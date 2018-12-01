@@ -1,0 +1,36 @@
+.onscroll
+
+document.body.scrollTop
+
+html,body
+{
+overflow: hidden ou scroll;
+}
+
+position: absolute;fixed;relative;
+
+
+
+--
+onreset
+onload
+onunload
+oninput
+onchange
+ondragdrop
+onclick
+ondblclick
+onfocus
+onkeydown
+onkeypress
+onkeyup
+onresize
+onscroll
+onmouseover
+onmouseout
+onblur
+onabort
+onmouseup
+onmousedown 
+onmousemove
+
