@@ -27,11 +27,21 @@
         </Grid>
         <Grid HorizontalAlignment="Left" Height="649" Margin="267,8,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="721" x:Name="droite">
             <Grid x:Name="grid_menu" HorizontalAlignment="Left" Height="43" Margin="3,4,0,0" VerticalAlignment="Top" Width="717">
-                <Menu x:Name="menu" HorizontalAlignment="Left" Height="40" Margin="-7,0,0,0" VerticalAlignment="Top" Width="720">
+                <Menu x:Name="menu" HorizontalAlignment="Left" Height="40"  VerticalAlignment="Top" Width="720">
                     <MenuItem x:Name="gerer" Width="39" Height="21" Background="blue" Foreground="white" Header="gérer">
-                        <MenuItem x:Name="user" Height="18" Background="blue" Width="50" Foreground="white"  Header="user" >
-                           
-                        </MenuItem>
+                        <MenuItem x:Name="user" Height="18" Background="blue" Padding="0" Width="150" Foreground="white"  Header="user" />
+                        <MenuItem x:Name="location" Height="18" Background="blue" Width="150" Foreground="white"  Header="location" />
+                        <MenuItem x:Name="paiement" Height="18" Background="blue" Width="150" Foreground="white"  Header="paiement" />
+                        <MenuItem x:Name="categorie" Height="18" Background="blue" Width="150" Foreground="white"  Header="catégorie" HorizontalAlignment="Left" />
+
+
+                    </MenuItem>
+                    <MenuItem x:Name="ajouter" Width="39" Height="21" Background="blue" Foreground="white" Header="ajouter">
+                        <MenuItem x:Name="Addresse" Height="18" Background="blue" Padding="0" Width="150" Foreground="white"  Header="Addresse" />
+                        <MenuItem x:Name="Store" Height="18" Background="blue" Width="150" Foreground="white"  Header="Store" />
+                        <MenuItem x:Name="Actor" Height="18" Background="blue" Width="150" Foreground="white"  Header="Actor" />
+                        <MenuItem x:Name="Film" Height="18" Background="blue" Width="150" Foreground="white"  Header="Film" HorizontalAlignment="Left" />
+
 
                     </MenuItem>
                 </Menu>
