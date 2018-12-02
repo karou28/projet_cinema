@@ -24,6 +24,20 @@ namespace Projet_Cinema_Client
         public MainWindow()
         {
             InitializeComponent();
+            grid_sortie.Children.Clear();
+            f();
+        }
+
+        private void user_Click(object sender, RoutedEventArgs e)
+        {
+            grid_sortie.Children.Clear();
+            grid_sortie.Children.Add(grid_gerer_user);
+        }
+
+        public void f()
+        {
+            grid_gerer_user.Width = 677;
+            grid_gerer_user.Height = 600;
         }
     }
 }
