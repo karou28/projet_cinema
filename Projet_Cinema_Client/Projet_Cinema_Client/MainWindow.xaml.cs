@@ -21,9 +21,29 @@ namespace Projet_Cinema_Client
     public partial class MainWindow : Window
     {
         
-        public MainWindow()
-        {
+        public MainWindow() {
+
+            
+              
             InitializeComponent();
+            grid_sortie.Children.Clear();
+            gerer_user.Width = 646;
+            gerer_user.Height = 557;
+            
+
+        }
+
+        private void Staff_gerer_Click(object sender, RoutedEventArgs e)
+        {
+            grid_sortie.Children.Clear();
+            grid_sortie.Children.Add(gerer_user);
+
+        }
+
+        private void nouveau_Click(object sender, RoutedEventArgs e)
+        {
+            grid_sortie.Children.Clear();
+            grid_sortie.Children.Add(grid_ajout_user);
         }
     }
 }
