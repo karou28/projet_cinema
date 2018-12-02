@@ -24,7 +24,9 @@ namespace Wcf_Project_Cinema.Model
         public string AddressDistrict { get; set; }
 
         [DataMember]
-        public int AddressCityId { get; set; }
+        public int CityId { get; set; }
+        [DataMember]
+        public City City { get; set; }
 
         [DataMember]
         public string AddressPostalCode { get; set; }
@@ -36,9 +38,12 @@ namespace Wcf_Project_Cinema.Model
         public DateTime AddressLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Staff> AddressStaffs { get; set; }
+        public virtual ICollection<Staff> Staffs { get; set; }
 
         [DataMember]
-        public virtual ICollection<Customer> AddressCustomers { get; set; }
+        public virtual ICollection<Store> Stores { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Customer> Customers { get; set; }
     }
 }

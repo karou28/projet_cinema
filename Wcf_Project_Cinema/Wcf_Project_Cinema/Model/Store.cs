@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Web;
+using Wcf_Project_Cinema.Model;
 
 namespace Wcf_Projet_Cinema.Model
 {
@@ -16,7 +17,10 @@ namespace Wcf_Projet_Cinema.Model
         public int StoreManagerStaffId { get; set; }
 
         [DataMember]
-        public int StoreAdresseId { get; set; }
+        public int AdresseId { get; set; }
+
+        [DataMember]
+        public Address Address { get; set; }
 
         [DataMember]
         public DateTime StoreLastUpdate { get; set; }
@@ -25,9 +29,9 @@ namespace Wcf_Projet_Cinema.Model
         public virtual ICollection<Film> StoreFilms { get; set; }
 
         [DataMember]
-        public virtual ICollection<Customer> StoreCustomers { get; set; }
+        public virtual ICollection<Customer> Customers { get; set; }
 
         [DataMember]
-        public virtual ICollection<Staff> StoreStaffs { get; set; }
+        public virtual ICollection<Staff> Staffs { get; set; }
     }
 }

@@ -16,21 +16,27 @@ namespace Wcf_Projet_Cinema.Model
         public DateTime RentalDate { get; set; }
 
         [DataMember]
-        public int RentalInventoryId { get; set; }
+        public int? InventoryId { get; set; }
+        [DataMember]
+        public Inventory Inventory { get; set; }
 
         [DataMember]
-        public int RentalCustomerId { get; set; }
+        public int CustomerId { get; set; }
+        [DataMember]
+        public Customer Customer { get; set; }
 
         [DataMember]
         public DateTime RentalReturnDate { get; set; }
 
         [DataMember]
-        public int RentalStaffId { get; set; }
+        public int? StaffId { get; set; }
+        [DataMember]
+        public Staff Staff { get; set; }
 
         [DataMember]
         public int RentalLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Payment> RentalPayments { get; set; }
+        public virtual ICollection<Payment> Payments { get; set; }
     }
 }

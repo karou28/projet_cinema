@@ -22,7 +22,9 @@ namespace Wcf_Projet_Cinema.Model
         public string FilmReleaseYear { get; set; }
 
         [DataMember]
-        public int FilmLanguageId { get; set; }
+        public int? LanguageId { get; set; }
+        [DataMember]
+        public Language Language { get; set; }
 
         [DataMember]
         public int FilmOriginalLanguageId { get; set; }
@@ -49,10 +51,10 @@ namespace Wcf_Projet_Cinema.Model
         public DateTime FilmLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Store>FilmStores { get; set; }
+        public virtual ICollection<Store>Stores { get; set; }
 
         [DataMember]
-        public virtual ICollection<Category> FilmCategories { get; set; }
+        public virtual ICollection<Category> Categories { get; set; }
 
 
     }

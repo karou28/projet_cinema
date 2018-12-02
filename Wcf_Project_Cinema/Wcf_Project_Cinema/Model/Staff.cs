@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Web;
+using Wcf_Project_Cinema.Model;
 
 namespace Wcf_Projet_Cinema.Model
 {
@@ -19,16 +20,13 @@ namespace Wcf_Projet_Cinema.Model
         public string StaffLastName { get; set; }
 
         [DataMember]
-        public int StaffAddressId { get; set; }
-
-        [DataMember]
         public byte[] StaffPicture { get; set; }
 
         [DataMember]
         public string StaffEmail { get; set; }
 
         [DataMember]
-        public int StaffStoreId { get; set; }
+        public int StoreId { get; set; }
 
         [DataMember]
         public int StaffActive { get; set; }
@@ -43,12 +41,17 @@ namespace Wcf_Projet_Cinema.Model
         public DateTime StaffLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Staff> StaffPayments { get; set; }
+        public int? AddressId { get; set; }
+        [DataMember]
+        public Address Address { get; set; }
 
         [DataMember]
-        public virtual ICollection<Store> StaffStores { get; set; }
+        public virtual ICollection<Staff> Payments { get; set; }
 
         [DataMember]
-        public virtual ICollection<Rental> StaffRentals { get; set; }
+        public virtual ICollection<Store> Stores { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Rental> Rentals { get; set; }
     }
 }

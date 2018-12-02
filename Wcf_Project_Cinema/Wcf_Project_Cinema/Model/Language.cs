@@ -19,6 +19,6 @@ namespace Wcf_Projet_Cinema.Model
         public DateTime LanguageLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Film> LanguageFilms { get; set; }
+        public virtual ICollection<Film> Films { get; set; }
     }
 }

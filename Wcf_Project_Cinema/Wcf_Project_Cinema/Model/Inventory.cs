@@ -13,16 +13,16 @@ namespace Wcf_Projet_Cinema.Model
         public int InventoryId { get; set; }
 
         [DataMember]
-        public int InventoryFilmId { get; set; }
+        public int FilmId { get; set; }
 
         [DataMember]
-        public int InventoryStoreId { get; set; }
+        public int StoreId { get; set; }
 
         [DataMember]
         public int InventoryLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Rental> InventoryRentals { get; set; }
+        public virtual ICollection<Rental> Rentals { get; set; }
 
     }
 }

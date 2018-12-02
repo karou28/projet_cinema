@@ -17,5 +17,8 @@ namespace Wcf_Projet_Cinema.Model
 
         [DataMember]
         public DateTime CountryLastUpdate { get; set; }
+
+        [DataMember]
+        public ICollection<City> Cities { get; set; }
     }
 }

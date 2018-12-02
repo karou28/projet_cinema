@@ -22,6 +22,6 @@ namespace Wcf_Projet_Cinema.Model
         public DateTime ActorLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Film> ActorFilms { get; set; }
+        public virtual ICollection<Film> Films { get; set; }
     }
 }

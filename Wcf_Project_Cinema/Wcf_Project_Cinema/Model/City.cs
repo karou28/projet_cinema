@@ -17,12 +17,14 @@ namespace Wcf_Projet_Cinema.Model
         public string CityName { get; set; }
 
         [DataMember]
-        public int CityCountryId { get; set; }
+        public int? CountryId { get; set; }
+        [DataMember]
+        public Country Country { get; set; }
 
         [DataMember]
         public DateTime CityLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Address> CityAddress { get; set; }
+        public virtual ICollection<Address> Address { get; set; }
     }
 }
