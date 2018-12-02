@@ -12,10 +12,12 @@ namespace Wcf_Project_Cinema
     [ServiceContract]
     public interface IFilmService
     {
-        [OperationContract]
-        Film Add();
+        
 
         [OperationContract]
-        Film Modify();
+        Film Add(Film f);
+
+        [OperationContract]
+        Film Modify(Film f);
     }
 }
