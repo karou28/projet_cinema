@@ -13,13 +13,13 @@ namespace Wcf_Project_Cinema
     public interface IStoreService
     {
         [OperationContract]
-        Store Add();
+        Store Add(Store s);
 
         [OperationContract]
-        Store Modify();
+        Store Modify(Store s);
 
         [OperationContract]
-        Store ListLesFilm();
+        List<Film> getListFilms(int id);
 
     }
 }

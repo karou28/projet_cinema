@@ -27,6 +27,9 @@ namespace Wcf_Projet_Cinema.Model
 
         [DataMember]
         public int StoreId { get; set; }
+        [DataMember]
+        public Store Store { get; set; }
+
 
         [DataMember]
         public int StaffActive { get; set; }
@@ -48,8 +51,7 @@ namespace Wcf_Projet_Cinema.Model
         [DataMember]
         public virtual ICollection<Staff> Payments { get; set; }
 
-        [DataMember]
-        public virtual ICollection<Store> Stores { get; set; }
+      
 
         [DataMember]
         public virtual ICollection<Rental> Rentals { get; set; }

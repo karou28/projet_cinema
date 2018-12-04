@@ -13,10 +13,10 @@ namespace Wcf_Project_Cinema
     public interface IActorService
     {
         [OperationContract]
-        Actor Add();
+        Actor Add(Actor a);
 
         [OperationContract]
-        Actor Modify();
+        Actor Modify(Actor a);
 
     }
 }

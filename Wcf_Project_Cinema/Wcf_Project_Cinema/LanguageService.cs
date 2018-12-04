@@ -11,15 +11,22 @@ namespace Wcf_Project_Cinema
     // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "LanguageService" à la fois dans le code et le fichier de configuration.
     public class LanguageService : ILanguageService
     {
-        public Language Add()
+        BDContext bd = new BDContext();
+        public Language Add(Language l)
         {
             throw new NotImplementedException();
+            bd.Languages.Add(l);
+            bd.Languages.SaveChanges();
+            return l;
         }
 
-
-        public Language Modify()
+        public Language Modify(Language l)
         {
             throw new NotImplementedException();
+            var req = (from a in bd.Languages where a.LanguageId = l.LanguageId select a).First();
+            req = l;
+            bd.Languages.SaveChanges();
+            return l;
         }
     }
 }

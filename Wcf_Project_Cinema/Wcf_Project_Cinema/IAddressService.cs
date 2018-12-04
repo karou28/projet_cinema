@@ -13,9 +13,9 @@ namespace Wcf_Project_Cinema
     public interface IAddressService
     {
         [OperationContract]
-        Address Add();
+        Address Add(Address a);
 
         [OperationContract]
-        Address Modify();
+        Address Modify(Address a);
     }
 }

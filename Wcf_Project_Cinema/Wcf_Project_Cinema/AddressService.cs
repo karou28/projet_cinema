@@ -11,18 +11,26 @@ namespace Wcf_Project_Cinema
     // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "AddressService" à la fois dans le code et le fichier de configuration.
     public class AddressService : IAddressService
     {
-        public Address Add()
+        BDContext bd = new BDContext();
+        public Address Add(Address a)
         {
             throw new NotImplementedException();
+            bd.Adresses.Add(a);
+            bd.Adresses.SaveChanges();
+            return a;
         }
 
         public void DoWork()
         {
         }
 
-        public Address Modify()
+        public Address Modify(Address b)
         {
             throw new NotImplementedException();
+            var req = (from a in bd.Adresses where a.AddressId = b.AddressId select a).First();
+            req = b;
+            bd.Adresses.SaveChanges();
+            return b;
         }
     }
 }

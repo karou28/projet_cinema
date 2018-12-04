@@ -11,14 +11,23 @@ namespace Wcf_Project_Cinema
     // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "CustomerService" à la fois dans le code et le fichier de configuration.
     public class CustomerService : ICustomerService
     {
-        public Customer Add()
+        BDContext bd = new BDContext();
+
+        public Customer Add(Customer c)
         {
             throw new NotImplementedException();
+            bd.Customers.Add(c);
+            bd.Customers.SaveChanges();
+            return c;
         }
 
-        public Customer Modify()
+        public Customer Modify(Customer c)
         {
             throw new NotImplementedException();
+            var req = (from a in bd.Customers where a.CustomerId = c.CustomerId select a).First();
+            req = c;
+            bd.Customers.SaveChanges();
+            return c;
         }
     }
 }

@@ -17,13 +17,17 @@ namespace Wcf_Project_Cinema
         public City Add(City c)
         {
             bdc.Cyties.Add(c);
-            bdc.SaveChanges();
+            bdc.Cyties.SaveChanges();
             return c;
         }
 
         public City Modify(City c)
         {
             throw new NotImplementedException();
+            var req = (from a in bdc.Cyties where a.CityId=c.CityId select a).First();
+            req = c;
+            bdc.Cyties.SaveChanges();
+            return c;
         }
     }
 }

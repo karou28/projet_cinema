@@ -19,5 +19,11 @@ namespace Wcf_Project_Cinema
 
         [OperationContract]
         Film Modify(Film f);
+
+        [OperationContract]
+        Film getOneFilm(int id);
+
+        [OperationContract]
+        List<Film> getFilms(int[] tabId);
     }
 }

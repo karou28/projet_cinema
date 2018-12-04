@@ -13,9 +13,9 @@ namespace Wcf_Project_Cinema
     public interface ICategoryService
     {
         [OperationContract]
-        Category Add();
+        Category Add(Category c);
 
         [OperationContract]
-        Category Modify();
+        Category Modify(Category c);
     }
 }

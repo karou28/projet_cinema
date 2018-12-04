@@ -13,9 +13,9 @@ namespace Wcf_Project_Cinema
     public interface ICountryService
     {
         [OperationContract]
-        Country Add();
+        Country Add(Country c);
 
         [OperationContract]
-        Country Modify();
+        Country Modify(Country c);
     }
 }

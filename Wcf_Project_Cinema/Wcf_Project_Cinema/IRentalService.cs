@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using Wcf_Projet_Cinema.Model;
 
 namespace Wcf_Project_Cinema
 {
@@ -11,7 +12,28 @@ namespace Wcf_Project_Cinema
     [ServiceContract]
     public interface IRentalService
     {
+
         [OperationContract]
         void DoWork();
+
+        [OperationContract]
+        Rental Add(Rental l);
+
+        [OperationContract]
+        Rental Modify(Rental r);
+
+        [OperationContract]
+        List<Rental> getListRentals_rendu();
+
+        [OperationContract]
+        List<Rental> getListRentals_encour();
+
+        [OperationContract]
+        List<Rental> getListRentals_depasse();
+
+        [OperationContract]
+         int getDays(DateTime d);
+
+
     }
 }

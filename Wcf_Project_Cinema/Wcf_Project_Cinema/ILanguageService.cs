@@ -13,9 +13,9 @@ namespace Wcf_Project_Cinema
     public interface ILanguageService
     {
         [OperationContract]
-        Language Add();
+        Language Add(Language l);
 
         [OperationContract]
-        Language Modify();
+        Language Modify(Language l);
     }
 }

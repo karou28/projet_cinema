@@ -11,14 +11,22 @@ namespace Wcf_Project_Cinema
     // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "InventoryService" à la fois dans le code et le fichier de configuration.
     public class InventoryService : IInventoryService
     {
-        public Inventory Add()
+        BDContext bd = new BDContext();
+        public Inventory Add(Inventory i)
         {
             throw new NotImplementedException();
+            bd.Inventories.Add(i);
+            bd.Inventories.SaveChanges();
+            return i;
         }
 
-        public Inventory Modify()
+        public Inventory Modify(Inventory i)
         {
             throw new NotImplementedException();
+            var req = (from a in bd.Inventories where a.InventoryId = i.InventoryId select a).First();
+            req = i;
+            bd.Inventories.SaveChanges();
+            return i;
         }
     }
 }

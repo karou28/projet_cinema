@@ -13,9 +13,9 @@ namespace Wcf_Project_Cinema
     public interface ICustomerService
     {
         [OperationContract]
-        Customer Add();
+        Customer Add(Customer c);
 
         [OperationContract]
-        Customer Modify();
+        Customer Modify(Customer c);
     }
 }

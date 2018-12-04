@@ -16,15 +16,34 @@ namespace Wcf_Project_Cinema
         {
             throw new NotImplementedException();
             bd.Films.Add(f);
+            bd.Films.SaveChanges();
+            return f;
+        }
+
+        public List<Film> getFilms(int[] tabId)
+        {
+            throw new NotImplementedException();
+            List<Film> l = new List<Film>();
+            for(int i=0;i<tabId.Length;i++)
+            {
+                Film f = bd.Films.Find(tabId[i]);
+                l.Add(f);
+            }
+            return l;
+        }
+
+        public Film getOneFilm(int id)
+        {
+            throw new NotImplementedException();
+            Film f= bd.Films.Find(id);
+            return f;
         }
 
         public Film Modify(Film f)
         {
             throw new NotImplementedException();
-            Film f1 = bd.Films.Find(f.FilmId);
-            bd.Films.Remove(f1);
-            f1 = f;
-            bd.Films.Add(f1);
+            var req = (from a in bd.Films where a.FilmId = f.FilmId select a).First();
+            req = f;
             bd.Films.SaveChanges();
 
         }

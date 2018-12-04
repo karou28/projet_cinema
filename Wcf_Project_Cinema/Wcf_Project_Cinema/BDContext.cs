@@ -5,12 +5,13 @@ using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
+using Wcf_Project_Cinema;
 using Wcf_Project_Cinema.Model;
 using Wcf_Projet_Cinema.Model;
 
 namespace Wcf_Project_Cinema
 {
-    public class BDContext : DbContext
+    public class BDContext : BbContext
     {
         public DbSet<Actor> Actors { get; set; }
         public DbSet<Address> Adresses { get; set; }

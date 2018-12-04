@@ -13,9 +13,9 @@ namespace Wcf_Project_Cinema
     public interface IInventoryService
     {
         [OperationContract]
-        Inventory Add();
+        Inventory Add(Inventory i);
 
         [OperationContract]
-        Inventory Modify();
+        Inventory Modify(Inventory i);
     }
 }
