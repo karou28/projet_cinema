@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
+
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
@@ -26,6 +26,11 @@ namespace Projet_Cinema_Client
             InitializeComponent();
             grid_sortie.Children.Clear();
             f();
+
+
+            
+
+
         }
 
         private void user_Click(object sender, RoutedEventArgs e)
@@ -38,6 +43,28 @@ namespace Projet_Cinema_Client
         {
             grid_gerer_user.Width = 677;
             grid_gerer_user.Height = 600;
+        }
+
+        private void b_nouveau_Click(object sender, RoutedEventArgs e)
+        {
+            ajouter_user u = new ajouter_user();
+            grid_sortie.Children.Clear();
+            grid_sortie.Children.Add(u);
+            
+        }
+
+        private void b_modifier_Click(object sender, RoutedEventArgs e)
+        {
+            modifier_user u = new modifier_user();
+            grid_sortie.Children.Clear();
+            grid_sortie.Children.Add(u);
+        }
+
+        private void mot_de_passe_Click(object sender, RoutedEventArgs e)
+        {
+            modif_mot_passe u = new modif_mot_passe();
+            grid_sortie.Children.Clear();
+            grid_sortie.Children.Add(u);
         }
     }
 }
