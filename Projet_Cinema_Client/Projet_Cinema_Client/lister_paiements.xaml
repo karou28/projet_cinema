@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="Projet_Cinema_Client.lister_paiements"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projet_Cinema_Client"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid x:Name="g" Margin="0,0,-395,-104">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" ItemsSource="{Binding DataSource}" ColumnWidth="*" AutoGenerateColumns="false" IsSynchronizedWithCurrentItem="true" Margin="59,63,0,0" VerticalAlignment="Top" Height="272" Width="595">
+
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Header="Date Paiement" Binding="{Binding PaymentDate}"/>
+                <DataGridTextColumn Header="Id Location" Binding="{Binding Rental.RentalId}"/>
+                <DataGridTextColumn Header="Id Client" Binding="{Binding Customer.CustomerId}"/>
+                <DataGridTextColumn Header="Id Staff" Binding="{Binding Staff.StaffId}"/>
+                <DataGridTextColumn Header="last update" Binding="{Binding PaymentLastUpdate}"/>
+                <DataGridTextColumn Header="Montant" Binding="{Binding PaymentAmount}"/>
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Label x:Name="label" Content="LISTE DES PAIEMENTS : " FontSize="14" Foreground="Blue" HorizontalAlignment="Left" Margin="185,16,0,0" VerticalAlignment="Top" Width="146"/>
+        <Label x:Name="type" Content="" Foreground="green" FontSize="13" HorizontalAlignment="Left" Margin="342,18,0,0" VerticalAlignment="Top" Width="147"/>
+        <Button x:Name="retour" Content="retour" Background="blue" Click="retour_Click" Foreground="white" HorizontalAlignment="Left" Margin="75,20,0,0" VerticalAlignment="Top" Width="49" Height="22"/>
+    </Grid>
+</UserControl>

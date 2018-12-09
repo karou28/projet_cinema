@@ -37,6 +37,9 @@ namespace Projet_Cinema_Client
         {
             grid_sortie.Children.Clear();
             grid_sortie.Children.Add(grid_gerer_user);
+
+            ajouter_user u = new ajouter_user();
+
         }
 
         public void f()
@@ -50,7 +53,15 @@ namespace Projet_Cinema_Client
             ajouter_user u = new ajouter_user();
             grid_sortie.Children.Clear();
             grid_sortie.Children.Add(u);
+
+            u.annuler.Click += annuler_Click; 
             
+        }
+
+        private void annuler_Click(object sender, RoutedEventArgs e)
+        {
+            grid_sortie.Children.Clear();
+            grid_sortie.Children.Add(grid_gerer_user);
         }
 
         private void b_modifier_Click(object sender, RoutedEventArgs e)
@@ -65,6 +76,35 @@ namespace Projet_Cinema_Client
             modif_mot_passe u = new modif_mot_passe();
             grid_sortie.Children.Clear();
             grid_sortie.Children.Add(u);
+        }
+
+        private void b_lister_users_Click(object sender, RoutedEventArgs e)
+        {
+            lister_users u = new lister_users();
+            grid_sortie.Children.Clear();
+            grid_sortie.Children.Add(u);
+
+        }
+
+        private void location_Click(object sender, RoutedEventArgs e)
+        {
+            gerer_location u = new gerer_location();
+            grid_sortie.Children.Clear();
+            grid_sortie.Children.Add(u);
+        }
+
+        
+
+        private void paiement_Click(object sender, RoutedEventArgs e)
+        {
+            grid_sortie.Children.Clear();
+            gerer_paiement u = new gerer_paiement();
+            grid_sortie.Children.Add(u);
+        }
+
+        private void categorie_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

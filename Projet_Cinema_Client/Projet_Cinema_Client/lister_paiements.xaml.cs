@@ -16,15 +16,20 @@ using System.Windows.Shapes;
 namespace Projet_Cinema_Client
 {
     /// <summary>
-    /// Interaction logic for ajouter_user.xaml
+    /// Interaction logic for lister_paiements.xaml
     /// </summary>
-    public partial class ajouter_user : UserControl
+    public partial class lister_paiements : UserControl
     {
-        public ajouter_user()
+        public lister_paiements()
         {
             InitializeComponent();
         }
 
-       
+        private void retour_Click(object sender, RoutedEventArgs e)
+        {
+            g.Children.Clear();
+            gerer_paiement u = new gerer_paiement();
+            g.Children.Add(u);
+        }
     }
 }

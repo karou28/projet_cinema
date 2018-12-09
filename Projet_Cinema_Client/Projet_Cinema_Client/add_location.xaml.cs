@@ -16,15 +16,20 @@ using System.Windows.Shapes;
 namespace Projet_Cinema_Client
 {
     /// <summary>
-    /// Interaction logic for ajouter_user.xaml
+    /// Interaction logic for add_location.xaml
     /// </summary>
-    public partial class ajouter_user : UserControl
+    public partial class add_location : UserControl
     {
-        public ajouter_user()
+        public add_location()
         {
             InitializeComponent();
         }
 
-       
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            g.Children.Clear();
+            gerer_location u = new gerer_location();
+            g.Children.Add(u);
+        }
     }
 }

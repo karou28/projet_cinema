@@ -7,10 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="600" Margin="-6,4,-294,-304" VerticalAlignment="Top" Width="600">
+        <Grid x:Name="g" HorizontalAlignment="Left" Height="584" Margin="-26,-23,-274,-261" VerticalAlignment="Top" Width="600">
             <Label x:Name="label" Content="Nom :" HorizontalAlignment="Left" Margin="35,10,0,0" FontWeight="bold" VerticalAlignment="Top" Width="78" Height="24"/>
             <Label x:Name="label21" Content="prénom :" HorizontalAlignment="Left" Margin="35,40,0,0" FontWeight="bold" VerticalAlignment="Top" Width="88" Height="26" RenderTransformOrigin="0.5,0.5">
-               
+
             </Label>
             <Label x:Name="label22" Content="Addresse :" HorizontalAlignment="Left" Margin="35,70,0,0" FontWeight="bold" VerticalAlignment="Top" Height="24" Width="86"/>
             <Label x:Name="label23" Content="email :" HorizontalAlignment="Left" Margin="35,100,0,0" FontWeight="bold" VerticalAlignment="Top" Height="26" Width="63"/>
@@ -24,7 +24,8 @@
             <ComboBox x:Name="Storem"  HorizontalAlignment="Left" Margin="281,130,0,0" Width="150" VerticalAlignment="Top" Height="24"/>
             <TextBox x:Name="usernamem"  HorizontalAlignment="Left" Margin="281,160,0,0" VerticalAlignment="Top" Width="150" Height="24"/>
             <Button x:Name="valider" Content="valider" HorizontalAlignment="Left" Margin="181,190,0,0" VerticalAlignment="Top" Background="blue" Foreground="white" Width="55"/>
-            
+            <Button x:Name="annuler" Content="annuler" HorizontalAlignment="Left" Margin="261,191,0,0" Background="green" Foreground="white" VerticalAlignment="Top" Width="57" Height="22"/>
+
         </Grid>
 
     </Grid>

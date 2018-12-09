@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace Projet_Cinema_Client
 {
     /// <summary>
-    /// Interaction logic for ajouter_user.xaml
+    /// Interaction logic for modifier_paiement.xaml
     /// </summary>
-    public partial class ajouter_user : UserControl
+    public partial class modifier_paiement : UserControl
     {
-        public ajouter_user()
+        public modifier_paiement()
         {
             InitializeComponent();
         }
-
-       
     }
 }
