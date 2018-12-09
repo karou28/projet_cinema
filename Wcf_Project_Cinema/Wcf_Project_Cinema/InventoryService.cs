@@ -14,7 +14,7 @@ namespace Wcf_Project_Cinema
         BDContext bd = new BDContext();
         public Inventory Add(Inventory i)
         {
-            throw new NotImplementedException();
+            
             bd.Inventories.Add(i);
             bd.Inventories.SaveChanges();
             return i;
@@ -22,7 +22,7 @@ namespace Wcf_Project_Cinema
 
         public Inventory Modify(Inventory i)
         {
-            throw new NotImplementedException();
+            
             var req = (from a in bd.Inventories where a.InventoryId = i.InventoryId select a).First();
             req = i;
             bd.Inventories.SaveChanges();

@@ -14,7 +14,7 @@ namespace Wcf_Project_Cinema
         BDContext bd = new BDContext();
         public Country Add(Country c)
         {
-            throw new NotImplementedException();
+           
             bd.Countries.Add(c);
             bd.Countries.SaveChanges();
             return c;
@@ -23,7 +23,7 @@ namespace Wcf_Project_Cinema
 
         public Country Modify(Country c)
         {
-            throw new NotImplementedException();
+            
             var req = (from a in bd.Countries where a.CountryId = c.CountryId select a).First();
                 req = c;
             bd.Countries.SaveChanges();

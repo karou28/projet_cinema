@@ -35,7 +35,7 @@ namespace Wcf_Project_Cinema
 
         public Staff Update(Staff s)
         {
-            throw new NotImplementedException();
+           
             var req= (from a in bd.Staffs where a.Staff.StaffId = s.StaffId select a).First();
             req = s;
             bd.Staffs.SaveChanges();

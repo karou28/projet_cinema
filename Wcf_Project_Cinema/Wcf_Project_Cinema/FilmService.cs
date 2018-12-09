@@ -34,14 +34,14 @@ namespace Wcf_Project_Cinema
 
         public Film getOneFilm(int id)
         {
-            throw new NotImplementedException();
+          
             Film f= bd.Films.Find(id);
             return f;
         }
 
         public Film Modify(Film f)
         {
-            throw new NotImplementedException();
+          
             var req = (from a in bd.Films where a.FilmId = f.FilmId select a).First();
             req = f;
             bd.Films.SaveChanges();

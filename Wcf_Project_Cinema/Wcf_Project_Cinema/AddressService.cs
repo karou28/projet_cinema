@@ -14,7 +14,7 @@ namespace Wcf_Project_Cinema
         BDContext bd = new BDContext();
         public Address Add(Address a)
         {
-            throw new NotImplementedException();
+            
             bd.Adresses.Add(a);
             bd.Adresses.SaveChanges();
             return a;
@@ -26,7 +26,7 @@ namespace Wcf_Project_Cinema
 
         public Address Modify(Address b)
         {
-            throw new NotImplementedException();
+            
             var req = (from a in bd.Adresses where a.AddressId = b.AddressId select a).First();
             req = b;
             bd.Adresses.SaveChanges();

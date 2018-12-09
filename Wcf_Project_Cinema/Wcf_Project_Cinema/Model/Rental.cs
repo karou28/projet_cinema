@@ -34,7 +34,7 @@ namespace Wcf_Projet_Cinema.Model
         public Staff Staff { get; set; }
 
         [DataMember]
-        public int RentalLastUpdate { get; set; }
+        public DateTime RentalLastUpdate { get; set; }
 
         [DataMember]
         public virtual ICollection<Payment> Payments { get; set; }

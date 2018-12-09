@@ -15,7 +15,7 @@ namespace Wcf_Project_Cinema
 
         public Store Add(Store s)
         {
-            throw new NotImplementedException();
+            
             bd.Stores.Add(s);
             bd.Stores.SaveChanges();
             return s;
@@ -23,13 +23,13 @@ namespace Wcf_Project_Cinema
 
         public List<Film> getListFilms(int id)
         {
-            throw new NotImplementedException();
+           
             return bd.Films.Where(a => a.Store.StoreId == id).First();
         }
 
         public Store Modify(Store s)
         {
-            throw new NotImplementedException();
+            
             var req = (from a in bd.Stores where a.StoreIs.StoreId select a).First();
             req = s;
             bd.Stores.SaveChanges();

@@ -14,7 +14,7 @@ namespace Wcf_Project_Cinema
         BDContext bd = new BDContext();
         public Category Add(Category c)
         {
-            throw new NotImplementedException();
+           
             bd.Categories.Add(c);
             bd.Categories.SaveChanges();
             return c;
@@ -26,7 +26,7 @@ namespace Wcf_Project_Cinema
 
         public Category Modify(Category c)
         {
-            throw new NotImplementedException();
+          
             var req = (from a in bd.Categories where a.CategoryId = c.CategoryId select a).First();
             req = c;
             bd.Categories.SaveChanges();

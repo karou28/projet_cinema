@@ -15,7 +15,7 @@ namespace Wcf_Project_Cinema
 
         public Customer Add(Customer c)
         {
-            throw new NotImplementedException();
+           
             bd.Customers.Add(c);
             bd.Customers.SaveChanges();
             return c;
@@ -23,7 +23,7 @@ namespace Wcf_Project_Cinema
 
         public Customer Modify(Customer c)
         {
-            throw new NotImplementedException();
+           
             var req = (from a in bd.Customers where a.CustomerId = c.CustomerId select a).First();
             req = c;
             bd.Customers.SaveChanges();
