@@ -14,10 +14,20 @@ namespace Wcf_Project_Cinema
         BDContext bd = new BDContext();
         public Staff Add(Staff f)
         {
-            throw new NotImplementedException();
-            bd.Staffs.Add(f);
-            bd.Staffs.SaveChanges();
-            return f;
+            
+            
+            try
+            {
+                bd.Staffs.Add(f);
+                bd.SaveChanges();
+                return f;
+            }
+            catch
+
+            {
+                
+                return null;
+            }
         }
 
         public void DoWork()
@@ -28,18 +38,24 @@ namespace Wcf_Project_Cinema
 
         public List<Staff> get_list_staff()
         {
-            throw new NotImplementedException();
-            var req = (from a in bd.Staffs select a).ToList();
-            return req;
-        }
+            try
+            {
+                return bd.Staffs.ToList();
+            }catch { return null; }
+            }
 
         public Staff Update(Staff s)
         {
-           
-            var req= (from a in bd.Staffs where a.Staff.StaffId = s.StaffId select a).First();
-            req = s;
-            bd.Staffs.SaveChanges();
-            return s;
-        }
+            try
+            {
+                Staff req = bd.Staffs.Find(s.StaffId);
+                req.StaffEmail = s.StaffEmail;
+                req.StaffFirstName = s.StaffFirstName;
+                req.StaffLastName = s.StaffLastName;
+
+                bd.SaveChanges();
+                return s;
+            }
+            catch { return null; }        }
     }
 }

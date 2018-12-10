@@ -14,38 +14,57 @@ namespace Wcf_Project_Cinema
         public BDContext bd = new BDContext();
         public Film Add(Film f)
         {
-            throw new NotImplementedException();
-            bd.Films.Add(f);
-            bd.Films.SaveChanges();
-            return f;
+            try
+            {
+                bd.Films.Add(f);
+                bd.SaveChanges();
+                return f;
+            }catch { return null; }
         }
 
         public List<Film> getFilms(int[] tabId)
         {
-            throw new NotImplementedException();
-            List<Film> l = new List<Film>();
-            for(int i=0;i<tabId.Length;i++)
+
+            try
             {
-                Film f = bd.Films.Find(tabId[i]);
-                l.Add(f);
-            }
-            return l;
+                List<Film> l = new List<Film>();
+                for (int i = 0; i < tabId.Length; i++)
+                {
+                    Film f = bd.Films.Find(tabId[i]);
+                    l.Add(f);
+                }
+                return l;
+            }catch { return null; }
         }
 
         public Film getOneFilm(int id)
         {
-          
-            Film f= bd.Films.Find(id);
-            return f;
+            try
+            {
+                Film f = bd.Films.Find(id);
+                return f;
+            }catch { return null; }
         }
 
         public Film Modify(Film f)
         {
-          
-            var req = (from a in bd.Films where a.FilmId = f.FilmId select a).First();
-            req = f;
-            bd.Films.SaveChanges();
 
+            try
+            {
+                Film req = bd.Films.Find(f.FilmId);
+                
+                
+                req.FilmRate = f.FilmRate;
+                
+                req.FilmRentalDuration = f.FilmRentalDuration;
+                
+                req.FilmReplacementCost = f.FilmReplacementCost;
+                req.FilmSpecialFeatures = f.FilmSpecialFeatures;
+                req.FilmTitle = f.FilmTitle;
+                req.FilmLastUpdate = f.FilmLastUpdate;
+                bd.SaveChanges();
+                return f;
+            }catch { return null; }
         }
     }
 }

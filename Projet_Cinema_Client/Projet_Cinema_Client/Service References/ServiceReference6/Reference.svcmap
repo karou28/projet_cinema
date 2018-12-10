@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3ac2d0b7-6aca-4c17-a5e4-7f96e318e019" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CountryService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="a1c021b6-6a45-45a5-a0d2-89650b0db5f3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CountryService/?xsd=xsd1" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="195d9fd3-9b62-4828-a189-2a1e9cceb5a6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CountryService/?xsd=xsd2" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="7c7521ed-7158-4369-a326-d8968b82db31" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CountryService/?xsd=xsd3" />
+    <MetadataFile FileName="CountryService.wsdl" MetadataType="Wsdl" ID="159b1486-082d-4974-b1d9-16b472e39950" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CountryService/?wsdl" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="8cb09236-b4e1-4b33-90c1-7293f6e8b155" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CountryService/?xsd=xsd0" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="32700e45-7cf6-4e5c-a48d-cfadc8028ed8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CountryService/?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

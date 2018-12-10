@@ -11,7 +11,7 @@ using Wcf_Projet_Cinema.Model;
 
 namespace Wcf_Project_Cinema
 {
-    public class BDContext : BbContext
+    public class BDContext : DbContext
     {
         public DbSet<Actor> Actors { get; set; }
         public DbSet<Address> Adresses { get; set; }

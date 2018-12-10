@@ -15,25 +15,23 @@ namespace Wcf_Project_Cinema
 
         public Store Add(Store s)
         {
-            
-            bd.Stores.Add(s);
-            bd.Stores.SaveChanges();
-            return s;
+            try
+            {
+                bd.Stores.Add(s);
+                bd.SaveChanges();
+                return s;
+            }
+            catch { return null; }
         }
 
         public List<Film> getListFilms(int id)
         {
-           
-            return bd.Films.Where(a => a.Store.StoreId == id).First();
+            return new List<Film>();
         }
 
         public Store Modify(Store s)
         {
-            
-            var req = (from a in bd.Stores where a.StoreIs.StoreId select a).First();
-            req = s;
-            bd.Stores.SaveChanges();
-            return s;
+            throw new NotImplementedException();
         }
     }
 }

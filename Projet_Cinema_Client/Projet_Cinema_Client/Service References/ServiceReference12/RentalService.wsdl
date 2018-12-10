@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="RentalService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/RentalService/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/RentalService/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/RentalService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/RentalService/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Wcf_Project_Cinema.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRentalService_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_Add_InputMessage">
+    <wsdl:part name="parameters" element="tns:Add" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_Add_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_Modify_InputMessage">
+    <wsdl:part name="parameters" element="tns:Modify" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_Modify_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_getListRentals_rendu_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListRentals_rendu" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_getListRentals_rendu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListRentals_renduResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_getListRentals_encour_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListRentals_encour" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_getListRentals_encour_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListRentals_encourResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_getListRentals_depasse_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListRentals_depasse" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_getListRentals_depasse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListRentals_depasseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_getDays_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDays" />
+  </wsdl:message>
+  <wsdl:message name="IRentalService_getDays_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDaysResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRentalService">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRentalService/DoWork" message="tns:IRentalService_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRentalService/DoWorkResponse" message="tns:IRentalService_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Add">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRentalService/Add" message="tns:IRentalService_Add_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRentalService/AddResponse" message="tns:IRentalService_Add_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Modify">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRentalService/Modify" message="tns:IRentalService_Modify_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRentalService/ModifyResponse" message="tns:IRentalService_Modify_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListRentals_rendu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRentalService/getListRentals_rendu" message="tns:IRentalService_getListRentals_rendu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRentalService/getListRentals_renduResponse" message="tns:IRentalService_getListRentals_rendu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListRentals_encour">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRentalService/getListRentals_encour" message="tns:IRentalService_getListRentals_encour_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRentalService/getListRentals_encourResponse" message="tns:IRentalService_getListRentals_encour_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListRentals_depasse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRentalService/getListRentals_depasse" message="tns:IRentalService_getListRentals_depasse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRentalService/getListRentals_depasseResponse" message="tns:IRentalService_getListRentals_depasse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDays">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRentalService/getDays" message="tns:IRentalService_getDays_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRentalService/getDaysResponse" message="tns:IRentalService_getDays_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IRentalService" type="tns:IRentalService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IRentalService/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add">
+      <soap:operation soapAction="http://tempuri.org/IRentalService/Add" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modify">
+      <soap:operation soapAction="http://tempuri.org/IRentalService/Modify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListRentals_rendu">
+      <soap:operation soapAction="http://tempuri.org/IRentalService/getListRentals_rendu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListRentals_encour">
+      <soap:operation soapAction="http://tempuri.org/IRentalService/getListRentals_encour" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListRentals_depasse">
+      <soap:operation soapAction="http://tempuri.org/IRentalService/getListRentals_depasse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDays">
+      <soap:operation soapAction="http://tempuri.org/IRentalService/getDays" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RentalService">
+    <wsdl:port name="BasicHttpBinding_IRentalService" binding="tns:BasicHttpBinding_IRentalService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/RentalService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

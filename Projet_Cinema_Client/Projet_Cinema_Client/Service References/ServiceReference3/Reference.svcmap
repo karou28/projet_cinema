@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2930f05f-e8da-4bb6-b45b-71e5193001a5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/ActorService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="b5f659e8-3bdf-4254-a46a-839067eab26e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/ActorService/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="ba1dded0-0b36-4862-9cb0-76d8af9dfd8d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/ActorService/?xsd=xsd2" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="8756ea63-c306-4aff-8208-ebd1d1b1c502" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/ActorService/?xsd=xsd3" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="4c2417da-1185-4e80-abc3-cd01605e621b" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/ActorService/?xsd=xsd0" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="38a93672-fa12-4633-9f56-91330bcb6611" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/ActorService/?xsd=xsd1" />
+    <MetadataFile FileName="ActorService.wsdl" MetadataType="Wsdl" ID="49bbf28f-7f00-4d54-85c9-20ae9a3c47c1" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/ActorService/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

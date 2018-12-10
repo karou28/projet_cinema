@@ -23,8 +23,7 @@ namespace Wcf_Project_Cinema.Model
         [DataMember]
         public string AddressDistrict { get; set; }
 
-        [DataMember]
-        public int CityId { get; set; }
+       
         [DataMember]
         public City City { get; set; }
 

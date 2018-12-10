@@ -21,8 +21,7 @@ namespace Wcf_Projet_Cinema.Model
         [DataMember]
         public string FilmReleaseYear { get; set; }
 
-        [DataMember]
-        public int? LanguageId { get; set; }
+        
         [DataMember]
         public Language Language { get; set; }
 
@@ -58,4 +57,6 @@ namespace Wcf_Projet_Cinema.Model
 
 
     }
+
+   
 }

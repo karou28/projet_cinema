@@ -14,10 +14,13 @@ namespace Wcf_Project_Cinema
         BDContext bd = new BDContext();
         public Address Add(Address a)
         {
-            
-            bd.Adresses.Add(a);
-            bd.Adresses.SaveChanges();
-            return a;
+            try
+            {
+
+                bd.Adresses.Add(a);
+                bd.SaveChanges();
+                return a;
+            }catch { return null; }
         }
 
         public void DoWork()
@@ -26,11 +29,20 @@ namespace Wcf_Project_Cinema
 
         public Address Modify(Address b)
         {
-            
-            var req = (from a in bd.Adresses where a.AddressId = b.AddressId select a).First();
-            req = b;
-            bd.Adresses.SaveChanges();
-            return b;
+            try
+            {
+
+                Address req = bd.Adresses.Find(b.AddressId);
+                req.Address2=b.Address2;
+                req.AddressDistrict = b.AddressDistrict;
+                req.AddressLastUpdate = b.AddressLastUpdate;
+                req.AddressName = b.AddressName;
+                req.AddressPostalCode = b.AddressPostalCode;
+                req.Address_Phone = b.Address_Phone;
+                
+                bd.SaveChanges();
+                return b;
+            }catch { return null; }
         }
     }
 }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3bce3032-1acf-40bd-906f-023291feea05" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/RentalService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="c833bd49-d86f-4f6a-8a89-70e563d51b5a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/RentalService/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="85095891-a126-41fd-8d75-9af07c1689f2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/RentalService/?xsd=xsd0" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="9f5bbf54-5d77-428d-a2dc-d3c02000c1c9" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/RentalService/?xsd=xsd1" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="4212e235-33e5-4159-b408-45b0af9e9e25" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/RentalService/?xsd=xsd2" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="bd285866-9f75-48e1-8da8-555fe17b47db" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/RentalService/?xsd=xsd3" />
+    <MetadataFile FileName="RentalService.wsdl" MetadataType="Wsdl" ID="fdbd98a9-a449-4eb0-a2de-12221759112e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/RentalService/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -16,18 +16,25 @@ namespace Wcf_Project_Cinema
 
         public City Add(City c)
         {
-            bdc.Cyties.Add(c);
-            bdc.Cyties.SaveChanges();
-            return c;
+            try
+            {
+                bdc.Cyties.Add(c);
+                bdc.SaveChanges();
+                return c;
+            }catch { return null; }
         }
 
         public City Modify(City c)
         {
-            
-            var req = (from a in bdc.Cyties where a.CityId=c.CityId select a).First();
-            req = c;
-            bdc.Cyties.SaveChanges();
-            return c;
+            try
+            {
+                City req = bdc.Cyties.Find(c.CityId);
+                req.CityLastUpdate = c.CityLastUpdate;
+                req.CityName = c.CityName;
+
+                bdc.SaveChanges();
+                return c;
+            }catch { return null; }
         }
     }
 }

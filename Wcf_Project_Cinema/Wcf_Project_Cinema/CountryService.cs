@@ -14,20 +14,26 @@ namespace Wcf_Project_Cinema
         BDContext bd = new BDContext();
         public Country Add(Country c)
         {
-           
-            bd.Countries.Add(c);
-            bd.Countries.SaveChanges();
-            return c;
+            try
+            {
+                bd.Countries.Add(c);
+                bd.SaveChanges();
+                return c;
+            }catch { return null; }
 
         }
 
         public Country Modify(Country c)
         {
-            
-            var req = (from a in bd.Countries where a.CountryId = c.CountryId select a).First();
-                req = c;
-            bd.Countries.SaveChanges();
-            return c;
+            try
+            {
+                Country req = bd.Countries.Find(c.CountryId);
+                req.CountryLastUpdate = c.CountryLastUpdate;
+                req.CountryName = c.CountryName;
+
+                bd.SaveChanges();
+                return c;
+            }catch { return null; }
         }
     }
 }

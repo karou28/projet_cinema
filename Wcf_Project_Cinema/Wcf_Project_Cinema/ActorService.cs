@@ -15,10 +15,13 @@ namespace Wcf_Project_Cinema
        
         public Actor Add(Actor a)
         {
-            throw new NotImplementedException();
-            bd.Actors.Add(a);
-            bd.Actors.SaveChanges();
-            return a;
+
+            try
+            {
+                bd.Actors.Add(a);
+                bd.SaveChanges();
+                return a;
+            }catch { return null; }
 
         }
 
@@ -26,11 +29,19 @@ namespace Wcf_Project_Cinema
 
         public Actor Modify(Actor a)
         {
-            throw new NotImplementedException();
-            var req = (from b in bd.Actors where b.ActorId = a.ActorId select b).First();
-            req = a;
-            bd.Actors.SaveChanges();
-            return a;
+
+            try
+            {
+                Actor req = bd.Actors.Find(a.ActorId);
+                req.ActorFirstName = a.ActorFirstName;
+                req.ActorLastName = a.ActorLastName;
+                req.ActorLastUpdate = a.ActorLastUpdate;
+
+                bd.SaveChanges();
+                return a;
+            }
+            catch { return null; }
+            
 
         }
     }

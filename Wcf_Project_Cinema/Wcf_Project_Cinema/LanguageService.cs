@@ -15,18 +15,37 @@ namespace Wcf_Project_Cinema
         public Language Add(Language l)
         {
             
-            bd.Languages.Add(l);
-            bd.Languages.SaveChanges();
-            return l;
+           
+            try
+            {
+                bd.Languages.Add(l);
+                bd.SaveChanges();
+
+                return l;
+            }
+            catch{
+                
+                return null; }
         }
+
+        
 
         public Language Modify(Language l)
         {
-            
-            var req = (from a in bd.Languages where a.LanguageId = l.LanguageId select a).First();
-            req = l;
-            bd.Languages.SaveChanges();
-            return l;
+
+            try
+            {
+                Language req = bd.Languages.Find(l.LanguageId);
+                req.LanguageName=l.LanguageName;
+                req.LanguageLastUpdate = l.LanguageLastUpdate;
+                
+                bd.SaveChanges();
+                return l;
+            }
+            catch(Exception e)
+            {
+                return null;
+            }
         }
     }
 }

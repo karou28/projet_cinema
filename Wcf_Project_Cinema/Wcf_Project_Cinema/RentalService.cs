@@ -17,9 +17,12 @@ namespace Wcf_Project_Cinema
         BDContext bd = new BDContext();
         public Rental Add(Rental l)
         {
-            bd.Rentals.Add(l);
-            bd.Rentals.SaveChanges();
-            return l;
+            try
+            {
+                bd.Rentals.Add(l);
+                bd.SaveChanges();
+                return l;
+            }catch { return null; }
             
         }
 
@@ -32,19 +35,32 @@ namespace Wcf_Project_Cinema
             return DateTime.DaysInMonth(d.Year, d.Month);
         }
 
+        public int getSpanDays(TimeSpan t)
+        {
+            return t.Days;
+        }
+
         public List<Rental> getListRentals_depasse()
         {
-          
-           
-            var req=(from a in bd.Rentals where getDays(DateTime.Now- a.RentalDate)> getDays(a.RentalReturnDate-a.RentalDate) select a).ToList();
-            return req;
+
+            try
+            {
+
+                return (from a in bd.Rentals where (getDays(DateTime.Now) - getSpanDays(a.RentalDate)) > getSpanDays(a.RentalReturnDate - a.RentalDate) select a).ToList();
+            }catch { return null; }
+        }
+
+        private int getSpanDays(DateTime rentalReturnDate)
+        {
+            throw new NotImplementedException();
         }
 
         public List<Rental> getListRentals_encour()
         {
-           
-            var req = (from a in bd.Rentals where getDays(DateTime.Now - a.RentalDate) < getDays(a.RentalReturnDate - a.RentalDate) select a).ToList();
-            return req;
+            try
+            {
+                return (from a in bd.Rentals where (getDays(DateTime.Now) - getSpanDays(a.RentalDate)) < (getSpanDays(a.RentalReturnDate - a.RentalDate)) select a).ToList();
+            }catch { return null; }
         }
 
         public List<Rental> getListRentals_rendu()
@@ -54,10 +70,16 @@ namespace Wcf_Project_Cinema
 
         public Rental Modify(Rental r)
         {
-            var req = (from a in bd.Rentals where a.RentalId = r.RentalId select a).First();
-            req = r;
-            bd.Rentals.SaveChanges();
-            return r; 
+            try
+            {
+                Rental req = bd.Rentals.Find(r.RentalId);
+
+                req.RentalLastUpdate = r.RentalLastUpdate;
+                req.RentalReturnDate = r.RentalReturnDate;
+
+                bd.SaveChanges();
+                return r;
+            }catch { return null; }
         }
     }
 }

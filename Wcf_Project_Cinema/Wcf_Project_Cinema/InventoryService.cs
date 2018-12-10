@@ -16,16 +16,16 @@ namespace Wcf_Project_Cinema
         {
             
             bd.Inventories.Add(i);
-            bd.Inventories.SaveChanges();
+            bd.SaveChanges();
             return i;
         }
 
         public Inventory Modify(Inventory i)
         {
             
-            var req = (from a in bd.Inventories where a.InventoryId = i.InventoryId select a).First();
+            var req = (from a in bd.Inventories where a.InventoryId == i.InventoryId select a).First();
             req = i;
-            bd.Inventories.SaveChanges();
+            bd.SaveChanges();
             return i;
         }
     }

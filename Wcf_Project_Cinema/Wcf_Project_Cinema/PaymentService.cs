@@ -14,10 +14,13 @@ namespace Wcf_Project_Cinema
         BDContext bd = new BDContext();
         public Payment Add(Payment p)
         {
-            
-            bd.Payments.Add(p);
-            bd.Payments.Savechanges();
-            return p;
+            try
+            {
+
+                bd.Payments.Add(p);
+                bd.SaveChanges();
+                return p;
+            }catch { return null; }
 
         }
 
@@ -33,30 +36,43 @@ namespace Wcf_Project_Cinema
 
         public List<Payment> get_list_paiements_Autre()
         {
-            
-            return bd.Payments.Where(a => getDays(a.Rental.RentalReturnDate) - getDays(a.RentalDate) > 31).ToList();
-        }
+            try
+            {
+
+                return bd.Payments.Where(a => getDays(a.Rental.RentalReturnDate) - getDays(a.Rental.RentalDate) > 31).ToList();
+            }catch { return null; }
+            }
 
         public List<Payment> get_list_paiements_Jour()
         {
-            
-            return bd.Payments.Where(a => getDays(a.Rental.RentalReturnDate) - getDays(a.RentalDate) == 1).ToList();
-        }
+            try
+            {
+                return bd.Payments.Where(a => getDays(a.Rental.RentalReturnDate) - getDays(a.Rental.RentalDate) == 1).ToList();
+            }catch { return null; }
+            }
 
         public List<Payment> get_list_paiements_Mois()
         {
-            
-            return bd.Payments.Where(a => getDays(a.Rental.RentalReturnDate) - getDays(a.RentalDate) == 30 || getDays(a.Rental.RentalReturnDate) - getDays(a.RentalDate) == 31).ToList();
-        }
+            try
+            {
+                return bd.Payments.Where(a => getDays(a.Rental.RentalReturnDate) - getDays(a.Rental.RentalDate) == 30 || getDays(a.Rental.RentalReturnDate) - getDays(a.Rental.RentalDate) == 31).ToList();
+            }catch { return null; }
+            }
 
         public Payment Modify(Payment p)
         {
-            
-            
-            var req =(from a in bd.Payments where a.PaymentId=p.PaymentId select a ).First();
-            req = p;
-            bd.Payments.SaveChanges();
-            return p;
+
+            try
+            {
+                Payment req = bd.Payments.Find(p.PaymentId);
+                req.PaymentAmount = p.PaymentAmount;
+                
+                req.PaymentLastUpdate = p.PaymentLastUpdate;
+                
+                bd.SaveChanges();
+
+                return p;
+            }catch { return null; }
         }
     }
 }

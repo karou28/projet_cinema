@@ -14,10 +14,12 @@ namespace Wcf_Project_Cinema
         BDContext bd = new BDContext();
         public Category Add(Category c)
         {
-           
-            bd.Categories.Add(c);
-            bd.Categories.SaveChanges();
-            return c;
+            try
+            {
+                bd.Categories.Add(c);
+                bd.SaveChanges();
+                return c;
+            }catch { return null; }
         }
 
         public void DoWork()
@@ -26,11 +28,16 @@ namespace Wcf_Project_Cinema
 
         public Category Modify(Category c)
         {
-          
-            var req = (from a in bd.Categories where a.CategoryId = c.CategoryId select a).First();
-            req = c;
-            bd.Categories.SaveChanges();
-            return c;
+            try
+            {
+
+                Category req=bd.Categories.Find(c.CategoryId);
+                req.CategoryLastUpdate = c.CategoryLastUpdate;
+                req.CategoryName = c.CategoryName;
+                
+                bd.SaveChanges();
+                return c;
+            }catch { return null; }
         }
     }
 }

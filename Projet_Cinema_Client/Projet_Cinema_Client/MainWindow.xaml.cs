@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Projet_Cinema_Client.ServiceReference1;
+using Projet_Cinema_Client.ServiceRStaff;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,10 +25,16 @@ namespace Projet_Cinema_Client
         
         public MainWindow()
         {
+            LanguageServiceClient s = new LanguageServiceClient();
+            ServiceReference1.Language st = new ServiceReference1.Language();
+            st.LanguageName = "ibouibou";
+            st.LanguageLastUpdate = DateTime.Now;
+            st.LanguageId = 2;
+            s.Modify(st);
             InitializeComponent();
             grid_sortie.Children.Clear();
             f();
-
+            
 
             
 

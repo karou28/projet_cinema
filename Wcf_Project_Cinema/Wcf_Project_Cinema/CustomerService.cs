@@ -15,19 +15,27 @@ namespace Wcf_Project_Cinema
 
         public Customer Add(Customer c)
         {
-           
-            bd.Customers.Add(c);
-            bd.Customers.SaveChanges();
-            return c;
+            try
+            {
+                bd.Customers.Add(c);
+                bd.SaveChanges();
+                return c;
+            }catch { return null; }
         }
 
         public Customer Modify(Customer c)
         {
-           
-            var req = (from a in bd.Customers where a.CustomerId = c.CustomerId select a).First();
-            req = c;
-            bd.Customers.SaveChanges();
-            return c;
+            try
+            {
+                var req = bd.Customers.Find(c.CustomerId);
+                req.CustomerEmail = c.CustomerEmail;
+                req.CustomerFirstName = c.CustomerFirstName;
+                req.CustomerLastName = c.CustomerLastName;
+                req.CustomerLastUpdate = c.CustomerLastUpdate;
+
+                bd.SaveChanges();
+                return c;
+            }catch { return null; }
         }
     }
 }

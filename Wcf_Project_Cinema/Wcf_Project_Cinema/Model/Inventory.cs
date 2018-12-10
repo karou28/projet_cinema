@@ -13,10 +13,10 @@ namespace Wcf_Projet_Cinema.Model
         public int InventoryId { get; set; }
 
         [DataMember]
-        public int FilmId { get; set; }
+        public  Film Film { get; set; }
 
         [DataMember]
-        public int StoreId { get; set; }
+        public Store Store { get; set; }
 
         [DataMember]
         public int InventoryLastUpdate { get; set; }
