@@ -25,18 +25,14 @@ namespace Projet_Cinema_Client
         
         public MainWindow()
         {
-            LanguageServiceClient s = new LanguageServiceClient();
-            ServiceReference1.Language st = new ServiceReference1.Language();
-            st.LanguageName = "ibouibou";
-            st.LanguageLastUpdate = DateTime.Now;
-            st.LanguageId = 2;
-            s.Modify(st);
+           
             InitializeComponent();
             grid_sortie.Children.Clear();
             f();
-            
-
-            
+            accueil a = new accueil();
+            gauche.Children.Clear();
+            droite.Children.Clear();
+            droite.Children.Add(a);
 
 
         }
