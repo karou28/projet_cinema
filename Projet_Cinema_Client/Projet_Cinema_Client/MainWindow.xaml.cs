@@ -27,12 +27,9 @@ namespace Projet_Cinema_Client
         {
            
             InitializeComponent();
-            grid_sortie.Children.Clear();
+           
             f();
-            accueil a = new accueil();
-            gauche.Children.Clear();
-            droite.Children.Clear();
-            droite.Children.Add(a);
+           
 
 
         }
