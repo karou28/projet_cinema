@@ -27,85 +27,20 @@ namespace Projet_Cinema_Client
         {
            
             InitializeComponent();
-           
-            f();
-           
+            accueil a = new Projet_Cinema_Client.accueil();
+            xx.Children.Clear();
+            xx.Children.Add(a);
 
 
         }
-
-        private void user_Click(object sender, RoutedEventArgs e)
-        {
-            grid_sortie.Children.Clear();
-            grid_sortie.Children.Add(grid_gerer_user);
-
-            ajouter_user u = new ajouter_user();
-
-        }
-
-        public void f()
-        {
-            grid_gerer_user.Width = 677;
-            grid_gerer_user.Height = 600;
-        }
-
-        private void b_nouveau_Click(object sender, RoutedEventArgs e)
-        {
-            ajouter_user u = new ajouter_user();
-            grid_sortie.Children.Clear();
-            grid_sortie.Children.Add(u);
-
-            u.annuler.Click += annuler_Click; 
-            
-        }
-
-        private void annuler_Click(object sender, RoutedEventArgs e)
-        {
-            grid_sortie.Children.Clear();
-            grid_sortie.Children.Add(grid_gerer_user);
-        }
-
-        private void b_modifier_Click(object sender, RoutedEventArgs e)
-        {
-            modifier_user u = new modifier_user();
-            grid_sortie.Children.Clear();
-            grid_sortie.Children.Add(u);
-        }
-
-        private void mot_de_passe_Click(object sender, RoutedEventArgs e)
-        {
-            modif_mot_passe u = new modif_mot_passe();
-            grid_sortie.Children.Clear();
-            grid_sortie.Children.Add(u);
-        }
-
-        private void b_lister_users_Click(object sender, RoutedEventArgs e)
-        {
-            lister_users u = new lister_users();
-            grid_sortie.Children.Clear();
-            grid_sortie.Children.Add(u);
-
-        }
-
-        private void location_Click(object sender, RoutedEventArgs e)
-        {
-            gerer_location u = new gerer_location();
-            grid_sortie.Children.Clear();
-            grid_sortie.Children.Add(u);
-        }
+       
 
         
 
-        private void paiement_Click(object sender, RoutedEventArgs e)
-        {
-            grid_sortie.Children.Clear();
-            gerer_paiement u = new gerer_paiement();
-            grid_sortie.Children.Add(u);
-        }
 
-        private void categorie_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
+
+
+        
     }
 }

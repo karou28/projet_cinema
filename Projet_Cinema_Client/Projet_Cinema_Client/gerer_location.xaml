@@ -28,7 +28,7 @@
 
             </MenuItem>
         </Menu>
-        <Label x:Name="label5" Content="GERER LOCATION" Foreground="blue" FontWeight="15" HorizontalAlignment="Left" Margin="253,18,0,0" VerticalAlignment="Top" Width="168"/>
+        <Label x:Name="label5" Content="GERER LOCATION" Foreground="blue" FontWeight="bold" HorizontalAlignment="Left" Margin="253,18,0,0" VerticalAlignment="Top" Width="168"/>
 
     </Grid>
 </UserControl>

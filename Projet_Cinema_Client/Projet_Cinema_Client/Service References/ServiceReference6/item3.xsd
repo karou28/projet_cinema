@@ -15,17 +15,29 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="get_list_country">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_list_countryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="get_list_countryResult" nillable="true" type="q3:ArrayOfCountry" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="Modify">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="c" nillable="true" type="q3:Country" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="c" nillable="true" type="q4:Country" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ModifyResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="ModifyResult" nillable="true" type="q4:Country" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="ModifyResult" nillable="true" type="q5:Country" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

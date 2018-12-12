@@ -2073,6 +2073,12 @@ namespace Projet_Cinema_Client.ServiceReference14 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStoreService/Modify", ReplyAction="http://tempuri.org/IStoreService/ModifyResponse")]
         System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference14.Store> ModifyAsync(Projet_Cinema_Client.ServiceReference14.Store s);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStoreService/get_list_store", ReplyAction="http://tempuri.org/IStoreService/get_list_storeResponse")]
+        Projet_Cinema_Client.ServiceReference14.Store[] get_list_store();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStoreService/get_list_store", ReplyAction="http://tempuri.org/IStoreService/get_list_storeResponse")]
+        System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference14.Store[]> get_list_storeAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStoreService/getListFilms", ReplyAction="http://tempuri.org/IStoreService/getListFilmsResponse")]
         Projet_Cinema_Client.ServiceReference14.Film[] getListFilms(int id);
         
@@ -2121,6 +2127,14 @@ namespace Projet_Cinema_Client.ServiceReference14 {
         
         public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference14.Store> ModifyAsync(Projet_Cinema_Client.ServiceReference14.Store s) {
             return base.Channel.ModifyAsync(s);
+        }
+        
+        public Projet_Cinema_Client.ServiceReference14.Store[] get_list_store() {
+            return base.Channel.get_list_store();
+        }
+        
+        public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference14.Store[]> get_list_storeAsync() {
+            return base.Channel.get_list_storeAsync();
         }
         
         public Projet_Cinema_Client.ServiceReference14.Film[] getListFilms(int id) {

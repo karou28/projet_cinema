@@ -316,9 +316,6 @@ namespace Projet_Cinema_Client.ServiceRStaff {
         private Projet_Cinema_Client.ServiceRStaff.City CityField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CityIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Projet_Cinema_Client.ServiceRStaff.Customer[] CustomersField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -437,19 +434,6 @@ namespace Projet_Cinema_Client.ServiceRStaff {
                 if ((object.ReferenceEquals(this.CityField, value) != true)) {
                     this.CityField = value;
                     this.RaisePropertyChanged("City");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CityId {
-            get {
-                return this.CityIdField;
-            }
-            set {
-                if ((this.CityIdField.Equals(value) != true)) {
-                    this.CityIdField = value;
-                    this.RaisePropertyChanged("CityId");
                 }
             }
         }
@@ -1519,7 +1503,7 @@ namespace Projet_Cinema_Client.ServiceRStaff {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int FilmIdField;
+        private Projet_Cinema_Client.ServiceRStaff.Film FilmField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int InventoryIdField;
@@ -1531,7 +1515,7 @@ namespace Projet_Cinema_Client.ServiceRStaff {
         private Projet_Cinema_Client.ServiceRStaff.Rental[] RentalsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int StoreIdField;
+        private Projet_Cinema_Client.ServiceRStaff.Store StoreField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1544,14 +1528,14 @@ namespace Projet_Cinema_Client.ServiceRStaff {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int FilmId {
+        public Projet_Cinema_Client.ServiceRStaff.Film Film {
             get {
-                return this.FilmIdField;
+                return this.FilmField;
             }
             set {
-                if ((this.FilmIdField.Equals(value) != true)) {
-                    this.FilmIdField = value;
-                    this.RaisePropertyChanged("FilmId");
+                if ((object.ReferenceEquals(this.FilmField, value) != true)) {
+                    this.FilmField = value;
+                    this.RaisePropertyChanged("Film");
                 }
             }
         }
@@ -1596,14 +1580,14 @@ namespace Projet_Cinema_Client.ServiceRStaff {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int StoreId {
+        public Projet_Cinema_Client.ServiceRStaff.Store Store {
             get {
-                return this.StoreIdField;
+                return this.StoreField;
             }
             set {
-                if ((this.StoreIdField.Equals(value) != true)) {
-                    this.StoreIdField = value;
-                    this.RaisePropertyChanged("StoreId");
+                if ((object.ReferenceEquals(this.StoreField, value) != true)) {
+                    this.StoreField = value;
+                    this.RaisePropertyChanged("Store");
                 }
             }
         }
@@ -1668,9 +1652,6 @@ namespace Projet_Cinema_Client.ServiceRStaff {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Projet_Cinema_Client.ServiceRStaff.Language LanguageField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> LanguageIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Projet_Cinema_Client.ServiceRStaff.Store[] StoresField;
@@ -1863,19 +1844,6 @@ namespace Projet_Cinema_Client.ServiceRStaff {
                 if ((object.ReferenceEquals(this.LanguageField, value) != true)) {
                     this.LanguageField = value;
                     this.RaisePropertyChanged("Language");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> LanguageId {
-            get {
-                return this.LanguageIdField;
-            }
-            set {
-                if ((this.LanguageIdField.Equals(value) != true)) {
-                    this.LanguageIdField = value;
-                    this.RaisePropertyChanged("LanguageId");
                 }
             }
         }

@@ -11,7 +11,7 @@
         <Label x:Name="label1" Content="new Return Date :" HorizontalAlignment="Left" Margin="162,130,0,0" VerticalAlignment="Top" Width="93"/>
         <ComboBox x:Name="staff" HorizontalAlignment="Left" Margin="314,90,0,0" VerticalAlignment="Top" Width="120"/>
         <DatePicker HorizontalAlignment="Left" x:Name="date" Margin="314,130,0,0" VerticalAlignment="Top" Width="116"/>
-        <Label x:Name="label2" Content="MODIFIER LOCATION" FontSize="14" Foreground="blue" HorizontalAlignment="Left" Margin="240,49,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label x:Name="label2" Content="MODIFIER LOCATION" FontSize="14" Foreground="blue" HorizontalAlignment="Left" Margin="240,49,0,0" VerticalAlignment="Top" Width="151" Height="31"/>
         <Button x:Name="button" Content="modifier" Background="blue" Foreground="white" HorizontalAlignment="Left" Margin="262,166,0,0" VerticalAlignment="Top" Width="61"/>
 
     </Grid>

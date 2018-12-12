@@ -199,4 +199,10 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfRental" nillable="true" type="tns:ArrayOfRental" />
+  <xs:complexType name="ArrayOfCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Country" nillable="true" type="tns:Country" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCountry" nillable="true" type="tns:ArrayOfCountry" />
 </xs:schema>

@@ -2067,6 +2067,12 @@ namespace Projet_Cinema_Client.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILanguageService/Add", ReplyAction="http://tempuri.org/ILanguageService/AddResponse")]
         System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference1.Language> AddAsync(Projet_Cinema_Client.ServiceReference1.Language l);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILanguageService/get_list_language", ReplyAction="http://tempuri.org/ILanguageService/get_list_languageResponse")]
+        Projet_Cinema_Client.ServiceReference1.Language[] get_list_language();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILanguageService/get_list_language", ReplyAction="http://tempuri.org/ILanguageService/get_list_languageResponse")]
+        System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference1.Language[]> get_list_languageAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILanguageService/Modify", ReplyAction="http://tempuri.org/ILanguageService/ModifyResponse")]
         Projet_Cinema_Client.ServiceReference1.Language Modify(Projet_Cinema_Client.ServiceReference1.Language l);
         
@@ -2107,6 +2113,14 @@ namespace Projet_Cinema_Client.ServiceReference1 {
         
         public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference1.Language> AddAsync(Projet_Cinema_Client.ServiceReference1.Language l) {
             return base.Channel.AddAsync(l);
+        }
+        
+        public Projet_Cinema_Client.ServiceReference1.Language[] get_list_language() {
+            return base.Channel.get_list_language();
+        }
+        
+        public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference1.Language[]> get_list_languageAsync() {
+            return base.Channel.get_list_languageAsync();
         }
         
         public Projet_Cinema_Client.ServiceReference1.Language Modify(Projet_Cinema_Client.ServiceReference1.Language l) {

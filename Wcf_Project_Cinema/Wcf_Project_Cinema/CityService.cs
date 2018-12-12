@@ -24,6 +24,14 @@ namespace Wcf_Project_Cinema
             }catch { return null; }
         }
 
+        public List<City> get_list_cities()
+        {
+            try {  var req=(from a in bdc.Cyties select a ).ToList();
+                return req;
+            }
+            catch { return null; }
+        }
+
         public City Modify(City c)
         {
             try

@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="600">
     <Grid x:Name="g" Width="600" Height="560" Margin="0,0,0,164">
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" ItemsSource="{Binding DataSource}" ColumnWidth="*" AutoGenerateColumns="false" IsSynchronizedWithCurrentItem="true" Margin="8,44,-3,0" VerticalAlignment="Top" Height="236" Width="595">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" ItemsSource="{Binding DataSource}" ColumnWidth="*" AutoGenerateColumns="false" IsSynchronizedWithCurrentItem="true" Margin="8,74,-3,0" VerticalAlignment="Top" Height="236" Width="595">
 
             <DataGrid.Columns>
 
@@ -21,7 +21,7 @@
             </DataGrid.Columns>
 
         </DataGrid>
-        <Label x:Name="label" Content="LISTE DES LOCATIONS :" Foreground="blue" FontSize="10" HorizontalAlignment="Left" Margin="248,5,0,0" VerticalAlignment="Top" Width="113"/>
-        <Label x:Name="type" Content="" Foreground="green" FontSize="10" HorizontalAlignment="Left" Margin="397,28,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="LISTE DES LOCATIONS :" Foreground="blue" FontSize="10" HorizontalAlignment="Left" Margin="248,35,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label x:Name="type" Content="" Foreground="green" FontSize="10" HorizontalAlignment="Left" Margin="397,35,0,0" VerticalAlignment="Top"/>
     </Grid>
 </UserControl>

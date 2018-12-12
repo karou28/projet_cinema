@@ -20,6 +20,12 @@
   <wsdl:message name="IStoreService_Modify_OutputMessage">
     <wsdl:part name="parameters" element="tns:ModifyResponse" />
   </wsdl:message>
+  <wsdl:message name="IStoreService_get_list_store_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_list_store" />
+  </wsdl:message>
+  <wsdl:message name="IStoreService_get_list_store_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_list_storeResponse" />
+  </wsdl:message>
   <wsdl:message name="IStoreService_getListFilms_InputMessage">
     <wsdl:part name="parameters" element="tns:getListFilms" />
   </wsdl:message>
@@ -34,6 +40,10 @@
     <wsdl:operation name="Modify">
       <wsdl:input wsaw:Action="http://tempuri.org/IStoreService/Modify" message="tns:IStoreService_Modify_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IStoreService/ModifyResponse" message="tns:IStoreService_Modify_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_list_store">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStoreService/get_list_store" message="tns:IStoreService_get_list_store_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStoreService/get_list_storeResponse" message="tns:IStoreService_get_list_store_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="getListFilms">
       <wsdl:input wsaw:Action="http://tempuri.org/IStoreService/getListFilms" message="tns:IStoreService_getListFilms_InputMessage" />
@@ -53,6 +63,15 @@
     </wsdl:operation>
     <wsdl:operation name="Modify">
       <soap:operation soapAction="http://tempuri.org/IStoreService/Modify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_list_store">
+      <soap:operation soapAction="http://tempuri.org/IStoreService/get_list_store" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

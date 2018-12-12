@@ -4,10 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Projet_Cinema_Client"
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid x:Name="g" Margin="0,0,-395,-104">
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" ItemsSource="{Binding DataSource}" ColumnWidth="*" AutoGenerateColumns="false" IsSynchronizedWithCurrentItem="true" Margin="59,63,0,0" VerticalAlignment="Top" Height="272" Width="595">
+             mc:Ignorable="d" d:DesignWidth="650" Height="600">
+    <Grid x:Name="g" Width="600" Height="600" Margin="10,10,0,0">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" ItemsSource="{Binding DataSource}" ColumnWidth="*" AutoGenerateColumns="false" IsSynchronizedWithCurrentItem="true" Margin="-140,92,0,0" VerticalAlignment="Top" Height="272" Width="500">
 
             <DataGrid.Columns>
 
@@ -21,8 +20,7 @@
             </DataGrid.Columns>
 
         </DataGrid>
-        <Label x:Name="label" Content="LISTE DES PAIEMENTS : " FontSize="14" Foreground="Blue" HorizontalAlignment="Left" Margin="185,16,0,0" VerticalAlignment="Top" Width="146"/>
-        <Label x:Name="type" Content="" Foreground="green" FontSize="13" HorizontalAlignment="Left" Margin="342,18,0,0" VerticalAlignment="Top" Width="147"/>
-        <Button x:Name="retour" Content="retour" Background="blue" Click="retour_Click" Foreground="white" HorizontalAlignment="Left" Margin="75,20,0,0" VerticalAlignment="Top" Width="49" Height="22"/>
+        <Label x:Name="label" Content="LISTE DES PAIEMENTS : " FontSize="14" Foreground="Blue" HorizontalAlignment="Left" Margin="5,46,0,0" VerticalAlignment="Top" Width="146"/>
+        <Label x:Name="type" Content="" Foreground="green" FontSize="13" HorizontalAlignment="Left" Margin="162,46,0,0" VerticalAlignment="Top" Width="147"/>
     </Grid>
 </UserControl>

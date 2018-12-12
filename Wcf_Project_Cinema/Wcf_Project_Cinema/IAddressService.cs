@@ -16,6 +16,9 @@ namespace Wcf_Project_Cinema
         Address Add(Address a);
 
         [OperationContract]
+        List<Address> get_list_address();
+
+        [OperationContract]
         Address Modify(Address a);
     }
 }

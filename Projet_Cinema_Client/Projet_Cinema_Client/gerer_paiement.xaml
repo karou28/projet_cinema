@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid x:Name="g" Margin="0,0,-448,-51">
-        <ComboBox x:Name="payment" HorizontalAlignment="Left" Margin="433,47,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <ComboBox x:Name="payment" SelectionChanged="payment_SelectionChanged" HorizontalAlignment="Left" Margin="433,47,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
         <Label x:Name="label" FontSize="12" FontWeight="bold" Content="Customer Id :" HorizontalAlignment="Left" Margin="106,41,0,0" VerticalAlignment="Top" Width="151"/>
         <Label x:Name="label1" FontSize="12" FontWeight="bold" Content="Payment Date :" HorizontalAlignment="Left" Margin="106,81,0,0" VerticalAlignment="Top" Width="104"/>
         <Label x:Name="label2" FontSize="12" FontWeight="bold" Content="Amount :" HorizontalAlignment="Left" Margin="106,120,0,0" VerticalAlignment="Top" Width="117"/>
@@ -28,7 +28,6 @@
 
             </MenuItem>
         </Menu>
-        <Label x:Name="labe" Content="GERER PAIEMENTS" Foreground="blue"  HorizontalAlignment="Left" Margin="225,6,0,0" VerticalAlignment="Top" Width="168"/>
         <Label x:Name="label5" FontWeight="bold" Content="Rental Id :" HorizontalAlignment="Left" Margin="110,233,0,0" VerticalAlignment="Top" Width="70"/>
         <Label x:Name="rentalId" Content="" HorizontalAlignment="Right" Margin="0,233,361,0" VerticalAlignment="Top" Width="111"/>
 

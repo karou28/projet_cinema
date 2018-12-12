@@ -29,6 +29,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="get_list_store">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_list_storeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="get_list_storeResult" nillable="true" type="q5:ArrayOfStore" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="getListFilms">
     <xs:complexType>
       <xs:sequence>
@@ -39,7 +51,7 @@
   <xs:element name="getListFilmsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="getListFilmsResult" nillable="true" type="q5:ArrayOfFilm" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="getListFilmsResult" nillable="true" type="q6:ArrayOfFilm" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -17,7 +17,7 @@
         <Label x:Name="label3" Content="staff :" HorizontalAlignment="Left" Margin="130,197,0,0" VerticalAlignment="Top" Width="115"/>
         <Button x:Name="ajouter" Content="ajouter" Background="blue" Foreground="white" HorizontalAlignment="Left" Margin="280,243,0,0" VerticalAlignment="Top" Width="75"/>
         <Label x:Name="label4" Content="AJOUT LOCATION" Foreground="blue" FontSize="13" HorizontalAlignment="Left" Margin="264,27,0,0" VerticalAlignment="Top" Width="123"/>
-        <Button x:Name="button" Content="annuler" Foreground="white" Click="button_Click" Background="green" HorizontalAlignment="Left" Margin="375,243,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button" Content="annuler" Foreground="white" Background="green" HorizontalAlignment="Left" Margin="375,243,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </UserControl>

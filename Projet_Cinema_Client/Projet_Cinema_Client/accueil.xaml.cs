@@ -24,5 +24,12 @@ namespace Projet_Cinema_Client
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            gerer_user u = new gerer_user();
+            this.Accueil.Children.Clear();
+            this.Accueil.Children.Add(u);
+        }
     }
 }
