@@ -1,0 +1,22 @@
+﻿<Window x:Class="Design_Cinema.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Design_Cinema"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None">
+    <Grid Height="442" VerticalAlignment="Bottom">
+        <StackPanel x:Name="panelLeft" HorizontalAlignment="Left" Height="451" VerticalAlignment="Top" Width="153" Background="#FFBD181B" Margin="0,-9,0,0">
+            <DockPanel Margin="0,0,1,0" Height="45">
+                <StackPanel Orientation="Vertical" Width="132"/>
+            </DockPanel>
+            <Button Content="       Home" Background="{x:Null}" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="20,25,10,0" FontSize="20" Padding="0" BorderThickness="0" Height="36" FontFamily="Wendell v1"/>
+            <StackPanel x:Name="bouton2" Height="100"/>
+        </StackPanel>
+        <DockPanel HorizontalAlignment="Left" Height="28" LastChildFill="False" Margin="153,-9,0,0" VerticalAlignment="Top" Width="639" Background="#FFF48A07"/>
+        <Image Margin="40,67,724,351" Source="baseline_home_white_18dp.png" Stretch="Fill"/>
+        <StackPanel HorizontalAlignment="Left" Height="31" Margin="0,58,0,0" VerticalAlignment="Top" Width="9" Background="#FFF48A07"/>
+
+    </Grid>
+</Window>

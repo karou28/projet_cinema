@@ -15,8 +15,7 @@
             <ColumnDefinition Width="993*"/>
             <ColumnDefinition Width="8*"/>
         </Grid.ColumnDefinitions>
-       
-            <Grid HorizontalAlignment="Left" Height="659" Margin="6,7,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="190" x:Name="gauche">
+        <Grid HorizontalAlignment="Left" Height="659" Margin="6,7,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="190" x:Name="gauche">
             <Border BorderThickness="1" BorderBrush="black" Margin="0,25,0,480" HorizontalAlignment="Left" Width="138">
 
                 <Image x:Name="image" Source="C:\Users\ibrahima\Desktop\images\user.jpg" Margin="0,0,2,0"/>
@@ -82,7 +81,7 @@
                         <ComboBox x:Name="cb_staff" HorizontalAlignment="Left" Margin="530,14,0,0" VerticalAlignment="Top" Height="32" Width="130" Grid.Row="1"/>
                         <Label x:Name="label" Content="Nom :" HorizontalAlignment="Left" Margin="110,57,0,0" FontWeight="bold" VerticalAlignment="Top" Height="30" Width="70" Grid.RowSpan="2"/>
                         <Label x:Name="l_lastname" Margin="266,17,282,0" VerticalAlignment="Top" Height="54" RenderTransformOrigin="0.5,0.5">
-                            <Label x:Name="label4" Content="GESTION USER" Foreground="blue" FontSize="14" Width="346" Height="28"/>
+                            <Label x:Name="label4" Content="GESTION USER" Foreground="blue" FontSize="14" Width="132" Height="28"/>
                         </Label>
                         <Label x:Name="label1" Content="first name :" FontWeight="bold" HorizontalAlignment="Left" Margin="110,18,0,0" VerticalAlignment="Top" Height="34" Width="82" Grid.Row="1"/>
                         <Label x:Name="l_firstname" Content="" HorizontalAlignment="Left" Margin="283,18,0,0" VerticalAlignment="Top" Grid.Row="1"/>
@@ -105,7 +104,7 @@
             </Border>
 
         </Grid>
-    
     </Grid>
+
 
 </Window>
