@@ -66,6 +66,9 @@
     <Compile Include="add_customer.xaml.cs">
       <DependentUpon>add_customer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="add_film.xaml.cs">
+      <DependentUpon>add_film.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ajouter-city.xaml.cs">
       <DependentUpon>ajouter-city.xaml</DependentUpon>
     </Compile>
@@ -188,6 +191,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="add_customer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="add_film.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -13,6 +13,9 @@ namespace Wcf_Projet_Cinema.Model
         public int RentalId { get; set; }
 
         [DataMember]
+        public int Returned { get; set; }
+
+        [DataMember]
         public DateTime RentalDate { get; set; }
 
         [DataMember]
