@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid x:Name="g" Margin="0,0,-383,-65">
-        <Label x:Name="label" Content="AJOUT PAIEMENT" Foreground="blue" FontSize="13" HorizontalAlignment="Left" Margin="255,17,0,0" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label" Content="MODIFICATION PAIEMENT" Foreground="blue" FontSize="13" HorizontalAlignment="Left" Margin="255,17,0,0" VerticalAlignment="Top" Width="231"/>
         <TextBox x:Name="amount" HorizontalAlignment="Left" Margin="385,69,0,0" VerticalAlignment="Top" Height="32" Width="150"/>
         <ComboBox x:Name="customer" HorizontalAlignment="Left" Margin="385,116,0,0" VerticalAlignment="Top" Width="150"/>
         <ComboBox x:Name="rental" HorizontalAlignment="Left" Margin="385,156,0,0" VerticalAlignment="Top" Width="150"/>

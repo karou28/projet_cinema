@@ -62,5 +62,10 @@ namespace Projet_Cinema_Client
             Add_paiement u = new Add_paiement();
             g.Children.Add(u);
         }
+
+        private void payment_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -2067,6 +2067,12 @@ namespace Projet_Cinema_Client.ServiceReference6 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICountryService/Add", ReplyAction="http://tempuri.org/ICountryService/AddResponse")]
         System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference6.Country> AddAsync(Projet_Cinema_Client.ServiceReference6.Country c);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICountryService/get_list_country", ReplyAction="http://tempuri.org/ICountryService/get_list_countryResponse")]
+        Projet_Cinema_Client.ServiceReference6.Country[] get_list_country();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICountryService/get_list_country", ReplyAction="http://tempuri.org/ICountryService/get_list_countryResponse")]
+        System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference6.Country[]> get_list_countryAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICountryService/Modify", ReplyAction="http://tempuri.org/ICountryService/ModifyResponse")]
         Projet_Cinema_Client.ServiceReference6.Country Modify(Projet_Cinema_Client.ServiceReference6.Country c);
         
@@ -2107,6 +2113,14 @@ namespace Projet_Cinema_Client.ServiceReference6 {
         
         public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference6.Country> AddAsync(Projet_Cinema_Client.ServiceReference6.Country c) {
             return base.Channel.AddAsync(c);
+        }
+        
+        public Projet_Cinema_Client.ServiceReference6.Country[] get_list_country() {
+            return base.Channel.get_list_country();
+        }
+        
+        public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference6.Country[]> get_list_countryAsync() {
+            return base.Channel.get_list_countryAsync();
         }
         
         public Projet_Cinema_Client.ServiceReference6.Country Modify(Projet_Cinema_Client.ServiceReference6.Country c) {

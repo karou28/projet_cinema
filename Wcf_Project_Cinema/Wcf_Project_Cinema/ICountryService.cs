@@ -16,6 +16,9 @@ namespace Wcf_Project_Cinema
         Country Add(Country c);
 
         [OperationContract]
+        List<Country> get_list_country();
+
+        [OperationContract]
         Country Modify(Country c);
     }
 }

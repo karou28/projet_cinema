@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Projet_Cinema_Client.ServiceReference5 {
+namespace Projet_Cinema_Client.ServiceReference23 {
     using System.Runtime.Serialization;
     using System;
     
@@ -23,7 +23,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Address[] AddressField;
+        private Projet_Cinema_Client.ServiceReference23.Address[] AddressField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int CityIdField;
@@ -35,7 +35,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private string CityNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Country CountryField;
+        private Projet_Cinema_Client.ServiceReference23.Country CountryField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> CountryIdField;
@@ -51,7 +51,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Address[] Address {
+        public Projet_Cinema_Client.ServiceReference23.Address[] Address {
             get {
                 return this.AddressField;
             }
@@ -103,7 +103,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Country Country {
+        public Projet_Cinema_Client.ServiceReference23.Country Country {
             get {
                 return this.CountryField;
             }
@@ -148,7 +148,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.City[] CitiesField;
+        private Projet_Cinema_Client.ServiceReference23.City[] CitiesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int CountryIdField;
@@ -170,7 +170,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.City[] Cities {
+        public Projet_Cinema_Client.ServiceReference23.City[] Cities {
             get {
                 return this.CitiesField;
             }
@@ -262,16 +262,16 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private string Address_PhoneField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.City CityField;
+        private Projet_Cinema_Client.ServiceReference23.City CityField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Customer[] CustomersField;
+        private Projet_Cinema_Client.ServiceReference23.Customer[] CustomersField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Staff[] StaffsField;
+        private Projet_Cinema_Client.ServiceReference23.Staff[] StaffsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Store[] StoresField;
+        private Projet_Cinema_Client.ServiceReference23.Store[] StoresField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -375,7 +375,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.City City {
+        public Projet_Cinema_Client.ServiceReference23.City City {
             get {
                 return this.CityField;
             }
@@ -388,7 +388,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Customer[] Customers {
+        public Projet_Cinema_Client.ServiceReference23.Customer[] Customers {
             get {
                 return this.CustomersField;
             }
@@ -401,7 +401,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Staff[] Staffs {
+        public Projet_Cinema_Client.ServiceReference23.Staff[] Staffs {
             get {
                 return this.StaffsField;
             }
@@ -414,7 +414,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Store[] Stores {
+        public Projet_Cinema_Client.ServiceReference23.Store[] Stores {
             get {
                 return this.StoresField;
             }
@@ -446,7 +446,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Address AddressField;
+        private Projet_Cinema_Client.ServiceReference23.Address AddressField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> AddressIdField;
@@ -473,13 +473,13 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.DateTime CustomerLastUpdateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Payment[] PaymentsField;
+        private Projet_Cinema_Client.ServiceReference23.Payment[] PaymentsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Rental[] RentalsField;
+        private Projet_Cinema_Client.ServiceReference23.Rental[] RentalsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Store StoreField;
+        private Projet_Cinema_Client.ServiceReference23.Store StoreField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> StoreIdField;
@@ -495,7 +495,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Address Address {
+        public Projet_Cinema_Client.ServiceReference23.Address Address {
             get {
                 return this.AddressField;
             }
@@ -612,7 +612,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Payment[] Payments {
+        public Projet_Cinema_Client.ServiceReference23.Payment[] Payments {
             get {
                 return this.PaymentsField;
             }
@@ -625,7 +625,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Rental[] Rentals {
+        public Projet_Cinema_Client.ServiceReference23.Rental[] Rentals {
             get {
                 return this.RentalsField;
             }
@@ -638,7 +638,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Store Store {
+        public Projet_Cinema_Client.ServiceReference23.Store Store {
             get {
                 return this.StoreField;
             }
@@ -683,16 +683,16 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Address AddressField;
+        private Projet_Cinema_Client.ServiceReference23.Address AddressField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> AddressIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Staff[] PaymentsField;
+        private Projet_Cinema_Client.ServiceReference23.Staff[] PaymentsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Rental[] RentalsField;
+        private Projet_Cinema_Client.ServiceReference23.Rental[] RentalsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int StaffActiveField;
@@ -722,7 +722,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private string StaffUsernameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Store StoreField;
+        private Projet_Cinema_Client.ServiceReference23.Store StoreField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int StoreIdField;
@@ -738,7 +738,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Address Address {
+        public Projet_Cinema_Client.ServiceReference23.Address Address {
             get {
                 return this.AddressField;
             }
@@ -764,7 +764,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Staff[] Payments {
+        public Projet_Cinema_Client.ServiceReference23.Staff[] Payments {
             get {
                 return this.PaymentsField;
             }
@@ -777,7 +777,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Rental[] Rentals {
+        public Projet_Cinema_Client.ServiceReference23.Rental[] Rentals {
             get {
                 return this.RentalsField;
             }
@@ -907,7 +907,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Store Store {
+        public Projet_Cinema_Client.ServiceReference23.Store Store {
             get {
                 return this.StoreField;
             }
@@ -952,19 +952,19 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Address AddressField;
+        private Projet_Cinema_Client.ServiceReference23.Address AddressField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int AdresseIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Customer[] CustomersField;
+        private Projet_Cinema_Client.ServiceReference23.Customer[] CustomersField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Staff[] StaffsField;
+        private Projet_Cinema_Client.ServiceReference23.Staff[] StaffsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Film[] StoreFilmsField;
+        private Projet_Cinema_Client.ServiceReference23.Film[] StoreFilmsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int StoreIdField;
@@ -986,7 +986,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Address Address {
+        public Projet_Cinema_Client.ServiceReference23.Address Address {
             get {
                 return this.AddressField;
             }
@@ -1012,7 +1012,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Customer[] Customers {
+        public Projet_Cinema_Client.ServiceReference23.Customer[] Customers {
             get {
                 return this.CustomersField;
             }
@@ -1025,7 +1025,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Staff[] Staffs {
+        public Projet_Cinema_Client.ServiceReference23.Staff[] Staffs {
             get {
                 return this.StaffsField;
             }
@@ -1038,7 +1038,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Film[] StoreFilms {
+        public Projet_Cinema_Client.ServiceReference23.Film[] StoreFilms {
             get {
                 return this.StoreFilmsField;
             }
@@ -1109,7 +1109,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Customer CustomerField;
+        private Projet_Cinema_Client.ServiceReference23.Customer CustomerField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> CustomerIdField;
@@ -1127,13 +1127,13 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.DateTime PaymentLastUpdateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Rental RentalField;
+        private Projet_Cinema_Client.ServiceReference23.Rental RentalField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int RentalIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Staff StaffField;
+        private Projet_Cinema_Client.ServiceReference23.Staff StaffField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> StaffIdField;
@@ -1149,7 +1149,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Customer Customer {
+        public Projet_Cinema_Client.ServiceReference23.Customer Customer {
             get {
                 return this.CustomerField;
             }
@@ -1227,7 +1227,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Rental Rental {
+        public Projet_Cinema_Client.ServiceReference23.Rental Rental {
             get {
                 return this.RentalField;
             }
@@ -1253,7 +1253,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Staff Staff {
+        public Projet_Cinema_Client.ServiceReference23.Staff Staff {
             get {
                 return this.StaffField;
             }
@@ -1298,19 +1298,19 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Customer CustomerField;
+        private Projet_Cinema_Client.ServiceReference23.Customer CustomerField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int CustomerIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Inventory InventoryField;
+        private Projet_Cinema_Client.ServiceReference23.Inventory InventoryField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> InventoryIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Payment[] PaymentsField;
+        private Projet_Cinema_Client.ServiceReference23.Payment[] PaymentsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime RentalDateField;
@@ -1325,7 +1325,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.DateTime RentalReturnDateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Staff StaffField;
+        private Projet_Cinema_Client.ServiceReference23.Staff StaffField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> StaffIdField;
@@ -1341,7 +1341,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Customer Customer {
+        public Projet_Cinema_Client.ServiceReference23.Customer Customer {
             get {
                 return this.CustomerField;
             }
@@ -1367,7 +1367,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Inventory Inventory {
+        public Projet_Cinema_Client.ServiceReference23.Inventory Inventory {
             get {
                 return this.InventoryField;
             }
@@ -1393,7 +1393,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Payment[] Payments {
+        public Projet_Cinema_Client.ServiceReference23.Payment[] Payments {
             get {
                 return this.PaymentsField;
             }
@@ -1458,7 +1458,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Staff Staff {
+        public Projet_Cinema_Client.ServiceReference23.Staff Staff {
             get {
                 return this.StaffField;
             }
@@ -1503,7 +1503,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Film FilmField;
+        private Projet_Cinema_Client.ServiceReference23.Film FilmField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int InventoryIdField;
@@ -1512,10 +1512,10 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private int InventoryLastUpdateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Rental[] RentalsField;
+        private Projet_Cinema_Client.ServiceReference23.Rental[] RentalsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Store StoreField;
+        private Projet_Cinema_Client.ServiceReference23.Store StoreField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1528,7 +1528,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Film Film {
+        public Projet_Cinema_Client.ServiceReference23.Film Film {
             get {
                 return this.FilmField;
             }
@@ -1567,7 +1567,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Rental[] Rentals {
+        public Projet_Cinema_Client.ServiceReference23.Rental[] Rentals {
             get {
                 return this.RentalsField;
             }
@@ -1580,7 +1580,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Store Store {
+        public Projet_Cinema_Client.ServiceReference23.Store Store {
             get {
                 return this.StoreField;
             }
@@ -1612,7 +1612,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Category[] CategoriesField;
+        private Projet_Cinema_Client.ServiceReference23.Category[] CategoriesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FilmDescriptionField;
@@ -1651,10 +1651,10 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private string FilmTitleField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Language LanguageField;
+        private Projet_Cinema_Client.ServiceReference23.Language LanguageField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Store[] StoresField;
+        private Projet_Cinema_Client.ServiceReference23.Store[] StoresField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1667,7 +1667,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Category[] Categories {
+        public Projet_Cinema_Client.ServiceReference23.Category[] Categories {
             get {
                 return this.CategoriesField;
             }
@@ -1836,7 +1836,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Language Language {
+        public Projet_Cinema_Client.ServiceReference23.Language Language {
             get {
                 return this.LanguageField;
             }
@@ -1849,7 +1849,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Store[] Stores {
+        public Projet_Cinema_Client.ServiceReference23.Store[] Stores {
             get {
                 return this.StoresField;
             }
@@ -1881,7 +1881,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Film[] FilmsField;
+        private Projet_Cinema_Client.ServiceReference23.Film[] FilmsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int LanguageIdField;
@@ -1903,7 +1903,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Film[] Films {
+        public Projet_Cinema_Client.ServiceReference23.Film[] Films {
             get {
                 return this.FilmsField;
             }
@@ -1983,7 +1983,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         private string CategoryNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Projet_Cinema_Client.ServiceReference5.Film[] FilmsField;
+        private Projet_Cinema_Client.ServiceReference23.Film[] FilmsField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -2035,7 +2035,7 @@ namespace Projet_Cinema_Client.ServiceReference5 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Projet_Cinema_Client.ServiceReference5.Film[] Films {
+        public Projet_Cinema_Client.ServiceReference23.Film[] Films {
             get {
                 return this.FilmsField;
             }
@@ -2058,29 +2058,35 @@ namespace Projet_Cinema_Client.ServiceReference5 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference5.ICityService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference23.ICityService")]
     public interface ICityService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICityService/Add", ReplyAction="http://tempuri.org/ICityService/AddResponse")]
-        Projet_Cinema_Client.ServiceReference5.City Add(Projet_Cinema_Client.ServiceReference5.City c);
+        Projet_Cinema_Client.ServiceReference23.City Add(Projet_Cinema_Client.ServiceReference23.City c);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICityService/Add", ReplyAction="http://tempuri.org/ICityService/AddResponse")]
-        System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference5.City> AddAsync(Projet_Cinema_Client.ServiceReference5.City c);
+        System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference23.City> AddAsync(Projet_Cinema_Client.ServiceReference23.City c);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICityService/get_list_cities", ReplyAction="http://tempuri.org/ICityService/get_list_citiesResponse")]
+        Projet_Cinema_Client.ServiceReference23.City[] get_list_cities();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICityService/get_list_cities", ReplyAction="http://tempuri.org/ICityService/get_list_citiesResponse")]
+        System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference23.City[]> get_list_citiesAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICityService/Modify", ReplyAction="http://tempuri.org/ICityService/ModifyResponse")]
-        Projet_Cinema_Client.ServiceReference5.City Modify(Projet_Cinema_Client.ServiceReference5.City c);
+        Projet_Cinema_Client.ServiceReference23.City Modify(Projet_Cinema_Client.ServiceReference23.City c);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICityService/Modify", ReplyAction="http://tempuri.org/ICityService/ModifyResponse")]
-        System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference5.City> ModifyAsync(Projet_Cinema_Client.ServiceReference5.City c);
+        System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference23.City> ModifyAsync(Projet_Cinema_Client.ServiceReference23.City c);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ICityServiceChannel : Projet_Cinema_Client.ServiceReference5.ICityService, System.ServiceModel.IClientChannel {
+    public interface ICityServiceChannel : Projet_Cinema_Client.ServiceReference23.ICityService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class CityServiceClient : System.ServiceModel.ClientBase<Projet_Cinema_Client.ServiceReference5.ICityService>, Projet_Cinema_Client.ServiceReference5.ICityService {
+    public partial class CityServiceClient : System.ServiceModel.ClientBase<Projet_Cinema_Client.ServiceReference23.ICityService>, Projet_Cinema_Client.ServiceReference23.ICityService {
         
         public CityServiceClient() {
         }
@@ -2101,19 +2107,27 @@ namespace Projet_Cinema_Client.ServiceReference5 {
                 base(binding, remoteAddress) {
         }
         
-        public Projet_Cinema_Client.ServiceReference5.City Add(Projet_Cinema_Client.ServiceReference5.City c) {
+        public Projet_Cinema_Client.ServiceReference23.City Add(Projet_Cinema_Client.ServiceReference23.City c) {
             return base.Channel.Add(c);
         }
         
-        public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference5.City> AddAsync(Projet_Cinema_Client.ServiceReference5.City c) {
+        public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference23.City> AddAsync(Projet_Cinema_Client.ServiceReference23.City c) {
             return base.Channel.AddAsync(c);
         }
         
-        public Projet_Cinema_Client.ServiceReference5.City Modify(Projet_Cinema_Client.ServiceReference5.City c) {
+        public Projet_Cinema_Client.ServiceReference23.City[] get_list_cities() {
+            return base.Channel.get_list_cities();
+        }
+        
+        public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference23.City[]> get_list_citiesAsync() {
+            return base.Channel.get_list_citiesAsync();
+        }
+        
+        public Projet_Cinema_Client.ServiceReference23.City Modify(Projet_Cinema_Client.ServiceReference23.City c) {
             return base.Channel.Modify(c);
         }
         
-        public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference5.City> ModifyAsync(Projet_Cinema_Client.ServiceReference5.City c) {
+        public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference23.City> ModifyAsync(Projet_Cinema_Client.ServiceReference23.City c) {
             return base.Channel.ModifyAsync(c);
         }
     }

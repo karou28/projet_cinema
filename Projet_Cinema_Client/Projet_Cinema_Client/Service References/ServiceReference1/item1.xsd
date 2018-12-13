@@ -15,17 +15,29 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="get_list_language">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_list_languageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="get_list_languageResult" nillable="true" type="q3:ArrayOfLanguage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="Modify">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="l" nillable="true" type="q3:Language" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="l" nillable="true" type="q4:Language" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ModifyResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="ModifyResult" nillable="true" type="q4:Language" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="ModifyResult" nillable="true" type="q5:Language" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -16,6 +16,9 @@ namespace Wcf_Project_Cinema
         Language Add(Language l);
 
         [OperationContract]
+        List<Language> get_list_language();
+
+        [OperationContract]
         Language Modify(Language l);
     }
 }

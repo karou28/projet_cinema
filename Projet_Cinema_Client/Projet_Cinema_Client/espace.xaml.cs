@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Projet_Cinema_Client
 {
     /// <summary>
-    /// Interaction logic for lister_users.xaml
+    /// Interaction logic for espace.xaml
     /// </summary>
-    public partial class lister_users : UserControl
+    public partial class espace : UserControl
     {
-        public lister_users()
+        public espace()
         {
             InitializeComponent();
         }

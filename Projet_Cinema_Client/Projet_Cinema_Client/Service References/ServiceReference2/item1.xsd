@@ -15,17 +15,29 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="get_list_address">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_list_addressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Wcf_Project_Cinema.Model" minOccurs="0" name="get_list_addressResult" nillable="true" type="q3:ArrayOfAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="Modify">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Wcf_Project_Cinema.Model" minOccurs="0" name="a" nillable="true" type="q3:Address" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Wcf_Project_Cinema.Model" minOccurs="0" name="a" nillable="true" type="q4:Address" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ModifyResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Wcf_Project_Cinema.Model" minOccurs="0" name="ModifyResult" nillable="true" type="q4:Address" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Wcf_Project_Cinema.Model" minOccurs="0" name="ModifyResult" nillable="true" type="q5:Address" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

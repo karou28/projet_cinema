@@ -29,6 +29,12 @@ namespace Wcf_Project_Cinema
             return new List<Film>();
         }
 
+        public List<Store> get_list_store()
+        {
+            try { return bd.Stores.ToList(); }
+            catch { return null; }
+        }
+
         public Store Modify(Store s)
         {
             throw new NotImplementedException();

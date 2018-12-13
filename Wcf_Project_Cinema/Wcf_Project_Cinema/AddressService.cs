@@ -27,6 +27,12 @@ namespace Wcf_Project_Cinema
         {
         }
 
+        public List<Address> get_list_address()
+        {
+            try { return bd.Adresses.ToList(); }
+            catch { return null; }
+        }
+
         public Address Modify(Address b)
         {
             try

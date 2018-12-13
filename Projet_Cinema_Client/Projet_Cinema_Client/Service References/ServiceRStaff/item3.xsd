@@ -11,7 +11,6 @@
       <xs:element minOccurs="0" name="AddressPostalCode" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Address_Phone" nillable="true" type="xs:string" />
       <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="City" nillable="true" type="q1:City" />
-      <xs:element minOccurs="0" name="CityId" type="xs:int" />
       <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="Customers" nillable="true" type="q2:ArrayOfCustomer" />
       <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="Staffs" nillable="true" type="q3:ArrayOfStaff" />
       <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Wcf_Projet_Cinema.Model" minOccurs="0" name="Stores" nillable="true" type="q4:ArrayOfStore" />

@@ -64,5 +64,10 @@ namespace Projet_Cinema_Client
             g.Children.Add(u);
             u.type.Content = "en cours";
         }
+
+        private void modifier_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

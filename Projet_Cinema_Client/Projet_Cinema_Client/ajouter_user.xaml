@@ -5,17 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Projet_Cinema_Client"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <Grid x:Name="g" HorizontalAlignment="Left" Height="584" Margin="-26,-23,-274,-261" VerticalAlignment="Top" Width="600">
-            <Label x:Name="label" Content="Nom :" HorizontalAlignment="Left" Margin="35,10,0,0" FontWeight="bold" VerticalAlignment="Top" Width="78" Height="24"/>
-            <Label x:Name="label21" Content="prénom :" HorizontalAlignment="Left" Margin="35,40,0,0" FontWeight="bold" VerticalAlignment="Top" Width="88" Height="26" RenderTransformOrigin="0.5,0.5">
+             d:DesignHeight="600" d:DesignWidth="620">
+   
+          
+        <Grid x:Name="g" HorizontalAlignment="Left" Height="443" Margin="-8,88,-16,0" VerticalAlignment="Top" Width="600">
+            <Label x:Name="label" Content="Nom :" HorizontalAlignment="Left" Margin="70,10,0,0" FontWeight="bold" VerticalAlignment="Top" Width="78" Height="24"/>
+            <Label x:Name="label21" Content="prénom :" HorizontalAlignment="Left" Margin="70,40,0,0" FontWeight="bold" VerticalAlignment="Top" Width="88" Height="26" RenderTransformOrigin="0.5,0.5">
 
             </Label>
-            <Label x:Name="label22" Content="Addresse :" HorizontalAlignment="Left" Margin="35,70,0,0" FontWeight="bold" VerticalAlignment="Top" Height="24" Width="86"/>
-            <Label x:Name="label23" Content="email :" HorizontalAlignment="Left" Margin="35,100,0,0" FontWeight="bold" VerticalAlignment="Top" Height="26" Width="63"/>
-            <Label x:Name="label24" Content="Store :" HorizontalAlignment="Left" Margin="35,130,0,0" FontWeight="bold" VerticalAlignment="Top" Width="60"/>
-            <Label x:Name="label25" Content="username :" HorizontalAlignment="Left" Margin="35,160,0,0" FontWeight="bold" VerticalAlignment="Top" Width="80"/>
+            <Label x:Name="label22" Content="Addresse :" HorizontalAlignment="Left" Margin="70,70,0,0" FontWeight="bold" VerticalAlignment="Top" Height="24" Width="86"/>
+            <Label x:Name="label23" Content="email :" HorizontalAlignment="Left" Margin="70,100,0,0" FontWeight="bold" VerticalAlignment="Top" Height="26" Width="63"/>
+            <Label x:Name="label24" Content="Store :" HorizontalAlignment="Left" Margin="70,130,0,0" FontWeight="bold" VerticalAlignment="Top" Width="60"/>
+            <Label x:Name="label25" Content="username :" HorizontalAlignment="Left" Margin="70,160,0,0" FontWeight="bold" VerticalAlignment="Top" Width="80"/>
 
             <TextBox x:Name="nomm"  HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Width="150" Height="24"/>
             <TextBox x:Name="prenomm"  HorizontalAlignment="Left" Margin="281,40,0,0" VerticalAlignment="Top" Width="150" Height="24"/>
@@ -23,10 +24,14 @@
             <TextBox x:Name="emailm"  HorizontalAlignment="Left" Margin="281,100,0,0" VerticalAlignment="Top" Width="150" Height="24"/>
             <ComboBox x:Name="Storem"  HorizontalAlignment="Left" Margin="281,130,0,0" Width="150" VerticalAlignment="Top" Height="24"/>
             <TextBox x:Name="usernamem"  HorizontalAlignment="Left" Margin="281,160,0,0" VerticalAlignment="Top" Width="150" Height="24"/>
-            <Button x:Name="valider" Content="valider" HorizontalAlignment="Left" Margin="181,190,0,0" VerticalAlignment="Top" Background="blue" Foreground="white" Width="55"/>
-            <Button x:Name="annuler" Content="annuler" HorizontalAlignment="Left" Margin="261,191,0,0" Background="green" Foreground="white" VerticalAlignment="Top" Width="57" Height="22"/>
+            <Button x:Name="valider" Content="valider" Click="valider_Click" HorizontalAlignment="Left" Margin="181,260,0,0" VerticalAlignment="Top" Background="blue" Foreground="white" Width="55"/>
+            <Button x:Name="annuler" Content="annuler" HorizontalAlignment="Left" Margin="261,260,0,0" Background="green" Foreground="white" VerticalAlignment="Top" Width="57" Height="22"/>
+            <Button x:Name="label1" Click="label1_Click" Content="Image path :" HorizontalAlignment="Left" FontWeight="bold" Margin="70,190,0,0" VerticalAlignment="Top" Height="26" Width="79"/>
+            <TextBox x:Name="img" HorizontalAlignment="Left" Height="24" Margin="281,196,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="151"/>
+            <Label x:Name="label2" Content="Password :" FontWeight="bold" HorizontalAlignment="Left" Margin="70,228,0,0" VerticalAlignment="Top" Width="76"/>
+            <TextBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="281,230,0,0" VerticalAlignment="Top" Height="24" Width="150"/>
 
         </Grid>
 
-    </Grid>
+    
 </UserControl>

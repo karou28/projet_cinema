@@ -16,6 +16,9 @@ namespace Wcf_Project_Cinema
         City Add(City c);
 
         [OperationContract]
+        List<City> get_list_cities();
+
+        [OperationContract]
         City Modify(City c);
     }
 }

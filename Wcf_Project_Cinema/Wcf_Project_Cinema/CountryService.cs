@@ -23,6 +23,12 @@ namespace Wcf_Project_Cinema
 
         }
 
+        public List<Country> get_list_country()
+        {
+            try { return bd.Countries.ToList(); }
+            catch { return null; }
+        }
+
         public Country Modify(Country c)
         {
             try

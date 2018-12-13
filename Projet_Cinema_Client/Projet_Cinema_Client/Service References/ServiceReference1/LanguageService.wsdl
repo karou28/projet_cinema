@@ -14,6 +14,12 @@
   <wsdl:message name="ILanguageService_Add_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddResponse" />
   </wsdl:message>
+  <wsdl:message name="ILanguageService_get_list_language_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_list_language" />
+  </wsdl:message>
+  <wsdl:message name="ILanguageService_get_list_language_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_list_languageResponse" />
+  </wsdl:message>
   <wsdl:message name="ILanguageService_Modify_InputMessage">
     <wsdl:part name="parameters" element="tns:Modify" />
   </wsdl:message>
@@ -25,6 +31,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/ILanguageService/Add" message="tns:ILanguageService_Add_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ILanguageService/AddResponse" message="tns:ILanguageService_Add_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="get_list_language">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILanguageService/get_list_language" message="tns:ILanguageService_get_list_language_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILanguageService/get_list_languageResponse" message="tns:ILanguageService_get_list_language_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="Modify">
       <wsdl:input wsaw:Action="http://tempuri.org/ILanguageService/Modify" message="tns:ILanguageService_Modify_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ILanguageService/ModifyResponse" message="tns:ILanguageService_Modify_OutputMessage" />
@@ -34,6 +44,15 @@
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="Add">
       <soap:operation soapAction="http://tempuri.org/ILanguageService/Add" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_list_language">
+      <soap:operation soapAction="http://tempuri.org/ILanguageService/get_list_language" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

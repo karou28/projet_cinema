@@ -15,6 +15,8 @@ namespace Wcf_Project_Cinema
         [OperationContract]
         Customer Add(Customer c);
 
+       
+
         [OperationContract]
         Customer Modify(Customer c);
     }

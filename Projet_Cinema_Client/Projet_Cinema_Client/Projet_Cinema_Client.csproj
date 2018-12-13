@@ -60,6 +60,45 @@
     <Compile Include="accueil.xaml.cs">
       <DependentUpon>accueil.xaml</DependentUpon>
     </Compile>
+    <Compile Include="add_actor.xaml.cs">
+      <DependentUpon>add_actor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="add_customer.xaml.cs">
+      <DependentUpon>add_customer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ajouter-city.xaml.cs">
+      <DependentUpon>ajouter-city.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ajouter_addresse.xaml.cs">
+      <DependentUpon>ajouter_addresse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ajouter_category.xaml.cs">
+      <DependentUpon>ajouter_category.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ajouter_country.xaml.cs">
+      <DependentUpon>ajouter_country.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ajouter_film.xaml.cs">
+      <DependentUpon>ajouter_film.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ajouter_language.xaml.cs">
+      <DependentUpon>ajouter_language.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ajouter_store.xaml.cs">
+      <DependentUpon>ajouter_store.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="espace.xaml.cs">
+      <DependentUpon>espace.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gererUser.xaml.cs">
+      <DependentUpon>gererUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gerer_user.xaml.cs">
+      <DependentUpon>gerer_user.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListerUsers.xaml.cs">
+      <DependentUpon>ListerUsers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReference10\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -85,7 +124,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ServiceReference15\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference23\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -101,11 +150,6 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Service References\ServiceReference4\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\ServiceReference5\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -139,6 +183,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="add_actor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="add_customer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="add_location.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -147,7 +199,43 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ajouter-city.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ajouter_addresse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ajouter_category.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ajouter_country.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ajouter_film.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ajouter_language.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ajouter_store.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ajouter_user.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="espace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gererUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -159,15 +247,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="gerer_user.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListerUsers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="lister_location.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="lister_paiements.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="lister_users.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -199,9 +291,6 @@
     </Compile>
     <Compile Include="lister_paiements.xaml.cs">
       <DependentUpon>lister_paiements.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="lister_users.xaml.cs">
-      <DependentUpon>lister_users.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -342,6 +431,22 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference14\StoreService.wsdl" />
+    <None Include="Service References\ServiceReference15\CityService.wsdl" />
+    <None Include="Service References\ServiceReference15\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference15\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference15\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference15\item3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference15\Projet_Cinema_Client.ServiceReference15.City.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReference1\item.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -356,6 +461,22 @@
     </None>
     <None Include="Service References\ServiceReference1\LanguageService.wsdl" />
     <None Include="Service References\ServiceReference1\Projet_Cinema_Client.ServiceReference1.Language.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference23\CityService.wsdl" />
+    <None Include="Service References\ServiceReference23\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference23\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference23\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference23\item3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference23\Projet_Cinema_Client.ServiceReference23.City.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference2\AddressService.wsdl" />
@@ -404,22 +525,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ServiceReference4\Projet_Cinema_Client.ServiceReference4.Category.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ServiceReference5\CityService.wsdl" />
-    <None Include="Service References\ServiceReference5\item.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference5\item1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference5\item2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference5\item3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference5\Projet_Cinema_Client.ServiceReference5.City.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference6\CountryService.wsdl" />
@@ -518,11 +623,12 @@
     <WCFMetadataStorage Include="Service References\ServiceReference12\" />
     <WCFMetadataStorage Include="Service References\ServiceReference13\" />
     <WCFMetadataStorage Include="Service References\ServiceReference14\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference15\" />
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference23\" />
     <WCFMetadataStorage Include="Service References\ServiceReference2\" />
     <WCFMetadataStorage Include="Service References\ServiceReference3\" />
     <WCFMetadataStorage Include="Service References\ServiceReference4\" />
-    <WCFMetadataStorage Include="Service References\ServiceReference5\" />
     <WCFMetadataStorage Include="Service References\ServiceReference6\" />
     <WCFMetadataStorage Include="Service References\ServiceReference7\" />
     <WCFMetadataStorage Include="Service References\ServiceReference8\" />
@@ -600,21 +706,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReference4\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReference5\item.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReference5\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReference5\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReference5\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -750,6 +841,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReference14\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference15\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference15\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference15\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference15\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference23\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference23\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference23\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference23\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

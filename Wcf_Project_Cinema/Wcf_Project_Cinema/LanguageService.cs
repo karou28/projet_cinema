@@ -28,7 +28,11 @@ namespace Wcf_Project_Cinema
                 return null; }
         }
 
-        
+        public List<Language> get_list_language()
+        {
+            try { return bd.Languages.ToList(); }
+            catch { return null; }
+        }
 
         public Language Modify(Language l)
         {
@@ -42,7 +46,7 @@ namespace Wcf_Project_Cinema
                 bd.SaveChanges();
                 return l;
             }
-            catch(Exception e)
+            catch
             {
                 return null;
             }

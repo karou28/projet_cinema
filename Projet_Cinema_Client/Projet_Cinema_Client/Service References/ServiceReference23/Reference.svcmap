@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="533fc002-14c8-40ab-905b-ce95af691296" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CityService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="7a617cfb-ec63-4112-8b5b-25485de7ae41" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CityService/?xsd=xsd0" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="cfb6cf82-7298-4874-a278-a43a9e7f8fcd" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CityService/?xsd=xsd1" />
+    <MetadataFile FileName="CityService.wsdl" MetadataType="Wsdl" ID="8707258d-56a8-4f2a-a0c6-ede1ffea9584" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CityService/?wsdl" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="a5d596de-628f-43ba-83d0-4cd518508a52" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CityService/?xsd=xsd3" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="7abeb7a4-966c-4a19-9a7e-1e41d50c1020" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CityService/?disco" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="b7e67608-8dab-461a-b5d0-3ff07e6d9377" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Wcf_Project_Cinema/CityService/?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

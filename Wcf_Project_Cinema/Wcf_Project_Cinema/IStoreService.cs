@@ -19,6 +19,9 @@ namespace Wcf_Project_Cinema
         Store Modify(Store s);
 
         [OperationContract]
+        List<Store> get_list_store();
+
+        [OperationContract]
         List<Film> getListFilms(int id);
 
     }

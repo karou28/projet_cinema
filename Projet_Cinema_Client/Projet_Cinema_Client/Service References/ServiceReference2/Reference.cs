@@ -2067,6 +2067,12 @@ namespace Projet_Cinema_Client.ServiceReference2 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAddressService/Add", ReplyAction="http://tempuri.org/IAddressService/AddResponse")]
         System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference2.Address> AddAsync(Projet_Cinema_Client.ServiceReference2.Address a);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAddressService/get_list_address", ReplyAction="http://tempuri.org/IAddressService/get_list_addressResponse")]
+        Projet_Cinema_Client.ServiceReference2.Address[] get_list_address();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAddressService/get_list_address", ReplyAction="http://tempuri.org/IAddressService/get_list_addressResponse")]
+        System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference2.Address[]> get_list_addressAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAddressService/Modify", ReplyAction="http://tempuri.org/IAddressService/ModifyResponse")]
         Projet_Cinema_Client.ServiceReference2.Address Modify(Projet_Cinema_Client.ServiceReference2.Address a);
         
@@ -2107,6 +2113,14 @@ namespace Projet_Cinema_Client.ServiceReference2 {
         
         public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference2.Address> AddAsync(Projet_Cinema_Client.ServiceReference2.Address a) {
             return base.Channel.AddAsync(a);
+        }
+        
+        public Projet_Cinema_Client.ServiceReference2.Address[] get_list_address() {
+            return base.Channel.get_list_address();
+        }
+        
+        public System.Threading.Tasks.Task<Projet_Cinema_Client.ServiceReference2.Address[]> get_list_addressAsync() {
+            return base.Channel.get_list_addressAsync();
         }
         
         public Projet_Cinema_Client.ServiceReference2.Address Modify(Projet_Cinema_Client.ServiceReference2.Address a) {
