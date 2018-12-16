@@ -26,7 +26,12 @@ namespace Wcf_Project_Cinema
 
         public List<Film> getListFilms(int id)
         {
-            return new List<Film>();
+            try
+            {
+
+                List<Film> l = (from a in bd.Films join b in bd.Inventories on a.FilmId equals b.InventoryFilm.FilmId where b.InventoryStore.StoreId == id select a).ToList();
+                return l;
+            }catch { return null; }
         }
 
         public List<Store> get_list_store()

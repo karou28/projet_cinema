@@ -46,7 +46,7 @@ namespace Wcf_Project_Cinema
             try
             {
 
-                return (from a in bd.Rentals where (getDays(DateTime.Now) - getSpanDays(a.RentalDate)) > getSpanDays(a.RentalReturnDate - a.RentalDate) select a).ToList();
+                return (from a in bd.Rentals where (getDays(DateTime.Now) - getSpanDays(a.RentalDate)) > getSpanDays(a.RentalReturnDate - a.RentalDate) && a.Returned==0 select a).ToList();
             }catch { return null; }
         }
 
@@ -65,7 +65,11 @@ namespace Wcf_Project_Cinema
 
         public List<Rental> getListRentals_rendu()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return (from a in bd.Rentals where a.Returned==1 select a).ToList();
+            }
+            catch { return null; }
         }
 
         public Rental Modify(Rental r)

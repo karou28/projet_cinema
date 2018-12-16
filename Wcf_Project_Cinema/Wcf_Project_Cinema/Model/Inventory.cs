@@ -24,7 +24,7 @@ namespace Wcf_Projet_Cinema.Model
         
 
         [DataMember]
-       public virtual Store IventoryStore { get; set; }
+       public virtual Store InventoryStore { get; set; }
 
         [DataMember]
         public int InventoryLastUpdate { get; set; }
