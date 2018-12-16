@@ -11,11 +11,12 @@
             <DockPanel Margin="0,0,1,0" Height="45">
                 <StackPanel Orientation="Vertical" Width="132"/>
             </DockPanel>
-            <Button Content="       Home" Background="{x:Null}" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="20,25,10,0" FontSize="20" Padding="0" BorderThickness="0" Height="36" FontFamily="Wendell v1"/>
+            <Button Content="    Home" Background="{x:Null}" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="20,25,10,0" FontSize="20" Padding="0" BorderThickness="0" Height="36" FontFamily="Wendell v1">
+            </Button>
             <StackPanel x:Name="bouton2" Height="100"/>
         </StackPanel>
         <DockPanel HorizontalAlignment="Left" Height="28" LastChildFill="False" Margin="153,-9,0,0" VerticalAlignment="Top" Width="639" Background="#FFF48A07"/>
-        <Image Margin="40,67,724,351" Source="baseline_home_white_18dp.png" Stretch="Fill"/>
+        <Image Margin="40,67,724,351" Source="baseline_home_white_18dp.png" />
         <StackPanel HorizontalAlignment="Left" Height="31" Margin="0,58,0,0" VerticalAlignment="Top" Width="9" Background="#FFF48A07"/>
 
     </Grid>
