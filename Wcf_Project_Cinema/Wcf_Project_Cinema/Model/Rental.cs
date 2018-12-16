@@ -18,28 +18,27 @@ namespace Wcf_Projet_Cinema.Model
         [DataMember]
         public DateTime RentalDate { get; set; }
 
-        [DataMember]
-        public int? InventoryId { get; set; }
-        [DataMember]
-        public Inventory Inventory { get; set; }
+       
 
-        [DataMember]
-        public int CustomerId { get; set; }
-        [DataMember]
-        public Customer Customer { get; set; }
+      [DataMember]
+       public virtual Inventory RentalInventory { get; set; }
+
+       
+       [DataMember]
+        public virtual Customer RentalCustomer { get; set; }
 
         [DataMember]
         public DateTime RentalReturnDate { get; set; }
 
-        [DataMember]
-        public int? StaffId { get; set; }
-        [DataMember]
-        public Staff Staff { get; set; }
+      public Rental() { RentalPayments = new HashSet<Payment>(); }
+
+       [DataMember]
+       public virtual Staff RentalStaff { get; set; }
 
         [DataMember]
         public DateTime RentalLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Payment> Payments { get; set; }
+        public virtual ICollection<Payment> RentalPayments { get; set; }
     }
 }

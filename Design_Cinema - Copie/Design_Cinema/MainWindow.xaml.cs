@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Projet_Cinema_Client
+namespace Design_Cinema
 {
     /// <summary>
-    /// Interaction logic for add_film.xaml
+    /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
-    public partial class add_film : UserControl
+    public partial class MainWindow : Window
     {
-        public add_film()
+        public MainWindow()
         {
             InitializeComponent();
         }

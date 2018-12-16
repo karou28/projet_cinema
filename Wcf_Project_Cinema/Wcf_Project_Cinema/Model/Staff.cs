@@ -10,6 +10,10 @@ namespace Wcf_Projet_Cinema.Model
     [DataContract]
     public class Staff
     {
+
+        public Staff() { StaffRentals = new HashSet<Rental>();
+            StaffPayments = new HashSet<Payment>();
+        }
         [DataMember]
         public int StaffId { get; set; }
 
@@ -25,10 +29,9 @@ namespace Wcf_Projet_Cinema.Model
         [DataMember]
         public string StaffEmail { get; set; }
 
-        [DataMember]
-        public int StoreId { get; set; }
-        [DataMember]
-        public Store Store { get; set; }
+        
+     [DataMember]
+     public virtual Store StaffStore { get; set; }
 
 
         [DataMember]
@@ -43,17 +46,16 @@ namespace Wcf_Projet_Cinema.Model
         [DataMember]
         public DateTime StaffLastUpdate { get; set; }
 
+       
         [DataMember]
-        public int? AddressId { get; set; }
-        [DataMember]
-        public Address Address { get; set; }
+       public virtual Address StaffAddress { get; set; }
 
         [DataMember]
-        public virtual ICollection<Staff> Payments { get; set; }
+        public virtual ICollection<Payment> StaffPayments { get; set; }
 
       
 
         [DataMember]
-        public virtual ICollection<Rental> Rentals { get; set; }
+        public virtual ICollection<Rental> StaffRentals { get; set; }
     }
 }

@@ -14,9 +14,10 @@ namespace Wcf_Projet_Cinema.Model
         public int CustomerId { get; set; }
 
         [DataMember]
-        public int? StoreId { get; set; }
+        public Nullable<int> StoreId { get; set; }
+
         [DataMember]
-        public Store Store { get; set; }
+        public virtual Store CustomerStore { get; set; }
 
         [DataMember]
         public string CustomerFirstName { get; set; }
@@ -28,9 +29,10 @@ namespace Wcf_Projet_Cinema.Model
         public string CustomerEmail { get; set; }
 
         [DataMember]
-        public int? AddressId { get; set; }
+        public Nullable<int> AddressId { get; set; }
+
         [DataMember]
-        public Address Address { get; set; }
+        public virtual Address CustomerAddress { get; set; }
 
         [DataMember]
         public Boolean CustomerActive { get; set; }
@@ -41,10 +43,14 @@ namespace Wcf_Projet_Cinema.Model
         [DataMember]
         public DateTime CustomerLastUpdate { get; set; }
 
-        [DataMember]
-        public virtual ICollection<Rental> Rentals { get; set; }
+        public Customer() { CustomerRentals = new HashSet<Rental>();
+            CustomerPayments = new HashSet<Payment>();
+        }
 
         [DataMember]
-        public virtual ICollection<Payment> Payments { get; set; }
+        public virtual ICollection<Rental> CustomerRentals { get; set; }
+
+        [DataMember]
+        public virtual ICollection<Payment> CustomerPayments { get; set; }
     }
 }

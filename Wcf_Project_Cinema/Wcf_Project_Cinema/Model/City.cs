@@ -8,23 +8,28 @@ using Wcf_Project_Cinema.Model;
 namespace Wcf_Projet_Cinema.Model
 {
     [DataContract]
+   [KnownType(typeof(Country))]
     public class City
     {
+        
+
         [DataMember]
         public int CityId { get; set; }
 
         [DataMember]
         public string CityName { get; set; }
 
-        [DataMember]
-        public int? CountryId { get; set; }
-        [DataMember]
-        public Country Country { get; set; }
+       
 
         [DataMember]
-        public DateTime CityLastUpdate { get; set; }
+        public virtual Country CityCountry { get; set; }
+
+      public City() { CityAddresses = new HashSet<Address>(); }
+       
+        [DataMember]
+        public String CityLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Address> Address { get; set; }
+        public virtual ICollection<Address> CityAddresses { get; set; }
     }
 }

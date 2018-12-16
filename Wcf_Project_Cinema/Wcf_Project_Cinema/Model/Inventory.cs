@@ -9,20 +9,28 @@ namespace Wcf_Projet_Cinema.Model
     [DataContract]
     public class Inventory
     {
+
+
         [DataMember]
         public int InventoryId { get; set; }
 
-        [DataMember]
-        public  Film Film { get; set; }
+       
 
         [DataMember]
-        public Store Store { get; set; }
+        public virtual Film InventoryFilm { get; set; }
+
+      public Inventory() { InventoryRentals = new HashSet<Rental>(); }
+
+        
+
+        [DataMember]
+       public virtual Store IventoryStore { get; set; }
 
         [DataMember]
         public int InventoryLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Rental> Rentals { get; set; }
+        public virtual ICollection<Rental> InventoryRentals { get; set; }
 
     }
 }

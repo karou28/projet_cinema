@@ -12,20 +12,21 @@ namespace Wcf_Projet_Cinema.Model
         [DataMember]
         public int PaymentId { get; set; }
 
+        public Payment() { }
+       
         [DataMember]
-        public int? CustomerId { get; set; }
-        [DataMember]
-        public Customer Customer { get; set; }
+        public virtual Customer PaymentCustomer { get; set; }
+
+        
+
 
         [DataMember]
-        public int? StaffId { get; set; }
-        [DataMember]
-        public Staff Staff { get; set; }
+       public virtual Staff PaymentStaff { get; set; }
 
-        [DataMember]
-        public int RentalId { get; set; }
-        [DataMember]
-        public Rental Rental { get; set; }
+       
+
+      [DataMember]
+       public virtual Rental PaymentRental { get; set; }
 
         [DataMember]
         public int PaymentAmount { get; set; }

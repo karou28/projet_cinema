@@ -16,11 +16,16 @@ namespace Wcf_Projet_Cinema.Model
         [DataMember]
         public int StoreManagerStaffId { get; set; }
 
-        [DataMember]
-        public int AdresseId { get; set; }
+        public Store() { StoreFilms = new HashSet<Film>();
+            StoreCustomers = new HashSet<Customer>();
+
+            StoreStaffs = new HashSet<Staff>();
+        }
+
+       
 
         [DataMember]
-        public Address Address { get; set; }
+        public virtual Address StoreAddress { get; set; }
 
         [DataMember]
         public DateTime StoreLastUpdate { get; set; }
@@ -29,9 +34,9 @@ namespace Wcf_Projet_Cinema.Model
         public virtual ICollection<Film> StoreFilms { get; set; }
 
         [DataMember]
-        public virtual ICollection<Customer> Customers { get; set; }
+        public virtual ICollection<Customer> StoreCustomers { get; set; }
 
         [DataMember]
-        public virtual ICollection<Staff> Staffs { get; set; }
+        public virtual ICollection<Staff> StoreStaffs { get; set; }
     }
 }

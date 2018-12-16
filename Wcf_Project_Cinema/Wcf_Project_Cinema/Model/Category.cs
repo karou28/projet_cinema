@@ -9,6 +9,7 @@ namespace Wcf_Projet_Cinema.Model
     [DataContract]
     public class Category
     {
+        public Category() { CategoryFilms = new HashSet<Film>(); }
         [DataMember]
         public int CategoryId { get; set; }
 
@@ -19,6 +20,6 @@ namespace Wcf_Projet_Cinema.Model
         public DateTime CategoryLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Film> Films { get; set; }
+        public virtual ICollection<Film> CategoryFilms { get; set; }
     }
 }

@@ -9,6 +9,7 @@ using Wcf_Projet_Cinema.Model;
 namespace Wcf_Project_Cinema.Model
 {
     [DataContract]
+   
     public class Address
     {
         [DataMember]
@@ -23,9 +24,18 @@ namespace Wcf_Project_Cinema.Model
         [DataMember]
         public string AddressDistrict { get; set; }
 
-       
         [DataMember]
-        public City City { get; set; }
+        public Nullable<int> CityId { get; set; }
+
+        [DataMember]
+        public virtual City City { get; set; }
+
+       public Address()
+        {
+            AddressStaffs = new HashSet<Staff>();
+            AddressStores = new HashSet<Store>();
+            AddressCustomers = new HashSet<Customer>();
+        }
 
         [DataMember]
         public string AddressPostalCode { get; set; }
@@ -37,12 +47,12 @@ namespace Wcf_Project_Cinema.Model
         public DateTime AddressLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Staff> Staffs { get; set; }
+        public virtual ICollection<Staff> AddressStaffs { get; set; }
 
         [DataMember]
-        public virtual ICollection<Store> Stores { get; set; }
+        public virtual ICollection<Store> AddressStores { get; set; }
 
         [DataMember]
-        public virtual ICollection<Customer> Customers { get; set; }
+        public virtual ICollection<Customer> AddressCustomers { get; set; }
     }
 }

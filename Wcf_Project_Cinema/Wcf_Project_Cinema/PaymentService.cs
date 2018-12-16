@@ -38,8 +38,8 @@ namespace Wcf_Project_Cinema
         {
             try
             {
-
-                return bd.Payments.Where(a => getDays(a.Rental.RentalReturnDate) - getDays(a.Rental.RentalDate) > 31).ToList();
+                
+              return bd.Payments.Where(a => getDays(a.PaymentRental.RentalReturnDate) - getDays(a.PaymentRental.RentalDate) > 31).ToList();
             }catch { return null; }
             }
 
@@ -47,7 +47,8 @@ namespace Wcf_Project_Cinema
         {
             try
             {
-                return bd.Payments.Where(a => getDays(a.Rental.RentalReturnDate) - getDays(a.Rental.RentalDate) == 1).ToList();
+                
+                return bd.Payments.Where(a => getDays(a.PaymentRental.RentalReturnDate) - getDays(a.PaymentRental.RentalDate) == 1).ToList();
             }catch { return null; }
             }
 
@@ -55,7 +56,8 @@ namespace Wcf_Project_Cinema
         {
             try
             {
-                return bd.Payments.Where(a => getDays(a.Rental.RentalReturnDate) - getDays(a.Rental.RentalDate) == 30 || getDays(a.Rental.RentalReturnDate) - getDays(a.Rental.RentalDate) == 31).ToList();
+                
+               return bd.Payments.Where(a => getDays(a.PaymentRental.RentalReturnDate) - getDays(a.PaymentRental.RentalDate) == 30 || getDays(a.PaymentRental.RentalReturnDate) - getDays(a.PaymentRental.RentalDate) == 31).ToList();
             }catch { return null; }
             }
 

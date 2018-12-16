@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="680" d:DesignWidth="1000">
     <Grid x:Name="g" Width="999" Height="650">
-        <Grid HorizontalAlignment="Left" Height="659" Margin="6,7,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="190" x:Name="gauche">
+        <Grid HorizontalAlignment="Left" Height="659" Margin="25,13,0,-22" VerticalAlignment="Top" Width="190" x:Name="gauche">
         <Border BorderThickness="1" BorderBrush="black" Margin="0,25,0,480" HorizontalAlignment="Left" Width="138">
 
             <Image x:Name="image" Source="C:\Users\ibrahima\Desktop\images\user.jpg" Margin="0,0,2,0"/>

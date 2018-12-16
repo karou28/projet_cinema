@@ -8,7 +8,8 @@ using Wcf_Projet_Cinema.Model;
 
 namespace Wcf_Project_Cinema
 {
-    // REMARQUE : vous pouvez utiliser la commande Renommer du menu Refactoriser pour changer le nom de classe "CountryService" à la fois dans le code et le fichier de configuration.
+    
+    
     public class CountryService : ICountryService
     {
         BDContext bd = new BDContext();
@@ -25,7 +26,11 @@ namespace Wcf_Project_Cinema
 
         public List<Country> get_list_country()
         {
-            try { return bd.Countries.ToList(); }
+            try
+            {
+                List<Country> l = bd.Countries.ToList();
+                return l;
+            }
             catch { return null; }
         }
 

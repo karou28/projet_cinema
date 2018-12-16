@@ -12,6 +12,9 @@ namespace Wcf_Projet_Cinema.Model
         [DataMember]
         public int ActorId { get; set; }
 
+        
+        public Actor() { }
+
         [DataMember]
         public string ActorFirstName { get; set; }
 

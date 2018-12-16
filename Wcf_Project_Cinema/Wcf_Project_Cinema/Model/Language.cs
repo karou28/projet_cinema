@@ -12,6 +12,8 @@ namespace Wcf_Projet_Cinema.Model
         [DataMember]
         public int LanguageId { get; set; }
 
+        public Language() { LanguageFilms = new HashSet<Film>(); }
+
         [DataMember]
         public string LanguageName { get; set; }
 
@@ -19,6 +21,6 @@ namespace Wcf_Projet_Cinema.Model
         public DateTime LanguageLastUpdate { get; set; }
 
         [DataMember]
-        public virtual ICollection<Film> Films { get; set; }
+        public virtual ICollection<Film> LanguageFilms { get; set; }
     }
 }

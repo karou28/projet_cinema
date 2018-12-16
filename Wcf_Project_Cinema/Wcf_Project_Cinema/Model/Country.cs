@@ -7,6 +7,7 @@ using System.Web;
 namespace Wcf_Projet_Cinema.Model
 {
     [DataContract]
+    
     public class Country
     {
         [DataMember]
@@ -15,10 +16,12 @@ namespace Wcf_Projet_Cinema.Model
         [DataMember]
         public string CountryName { get; set; }
 
-        [DataMember]
-        public DateTime CountryLastUpdate { get; set; }
+        public Country() { CountryCities = new HashSet<City>(); }
 
         [DataMember]
-        public ICollection<City> Cities { get; set; }
+        public String CountryLastUpdate { get; set; }
+
+        [DataMember]
+        public virtual ICollection<City> CountryCities { get; set; }
     }
 }

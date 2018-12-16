@@ -23,10 +23,14 @@ namespace Projet_Cinema_Client
     {
         public ajouter_film()
         {
-            ajouter_film f = new ajouter_film();
+            InitializeComponent();
 
             
-           
+            ServiceReference1.LanguageServiceClient client = new ServiceReference1.LanguageServiceClient();
+            List<ServiceReference1.Language> li = new List<ServiceReference1.Language>();
+            li = client.get_list_language().ToList();
+            language.ItemsSource = li;
+            language.DisplayMemberPath = "LanguageName";
              
         }
 
@@ -34,7 +38,7 @@ namespace Projet_Cinema_Client
         {
             Film f = new Film();
             FilmServiceClient client = new ServiceReference8.FilmServiceClient();
-            f.FilmDescription = f.description.Text;
+            f.FilmDescription = description.Text;
             f.FilmLastUpdate = DateTime.Now;
             f.FilmLength = int.Parse(length.Text);
             f.FilmOriginalLanguageId =((ServiceReference1.Language)originallanguage.SelectedItem).LanguageId;
